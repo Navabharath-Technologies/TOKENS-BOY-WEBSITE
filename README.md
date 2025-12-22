@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Token Boy Website
 
 **Easy Tokens for Indian Clinics by Navabharath Technologies**
