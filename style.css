@@ -2027,7 +2027,7 @@ footer {
     /* Reduced for better mobile fit */
 }
 
-/* 3D Carousel Styles - ANTIGRAVITY ORBIT */
+/* 3D Carousel Styles - ADVANCED HOLOGRAPHIC ORBIT */
 .carousel-scene {
     perspective: 2000px;
     height: 600px;
@@ -2038,6 +2038,51 @@ footer {
     align-items: center;
     overflow: hidden;
     touch-action: pan-y;
+    background: radial-gradient(ellipse at center, rgba(247, 147, 30, 0.03) 0%, transparent 70%);
+}
+
+/* Animated Background Particles */
+.carousel-scene::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(2px 2px at 20% 30%, rgba(247, 147, 30, 0.3), transparent),
+        radial-gradient(2px 2px at 60% 70%, rgba(255, 81, 47, 0.3), transparent),
+        radial-gradient(1px 1px at 50% 50%, rgba(247, 147, 30, 0.2), transparent),
+        radial-gradient(1px 1px at 80% 10%, rgba(255, 81, 47, 0.2), transparent),
+        radial-gradient(2px 2px at 90% 60%, rgba(247, 147, 30, 0.25), transparent),
+        radial-gradient(1px 1px at 33% 80%, rgba(255, 81, 47, 0.2), transparent);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    animation: particleFloat 20s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes particleFloat {
+
+    0%,
+    100% {
+        background-position: 0% 0%;
+        opacity: 0.4;
+    }
+
+    25% {
+        background-position: 100% 100%;
+        opacity: 0.6;
+    }
+
+    50% {
+        background-position: 0% 100%;
+        opacity: 0.5;
+    }
+
+    75% {
+        background-position: 100% 0%;
+        opacity: 0.7;
+    }
 }
 
 /* The Ring */
@@ -2051,8 +2096,8 @@ footer {
     margin-top: -190px;
     transform-style: preserve-3d;
     transition: transform 0.1s linear;
-    /* Smooth programmatic control */
     will-change: transform;
+    z-index: 2;
 }
 
 /* Card Wrappers - Positioned in a ring */
@@ -2065,64 +2110,243 @@ footer {
     transform-style: preserve-3d;
 }
 
-/* The Card Itself */
+/* The Card Itself - ENHANCED WITH HOLOGRAPHIC EFFECTS */
 .problem-card {
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 248, 243, 0.95) 100%);
+    border: 2px solid rgba(247, 147, 30, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 24px;
     padding: 30px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
 
-    /* Ensure no default blur/opacity on base state, controlled by JS */
     opacity: 0;
     filter: none;
+    position: relative;
+    overflow: hidden;
 
-    transition: opacity 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-
-    /* Billboarding handled by JS */
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     backface-visibility: hidden;
-    will-change: transform, opacity;
+    will-change: transform, opacity, box-shadow;
 }
 
-/* Card Content Styling */
+/* Holographic Shimmer Effect */
+.problem-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent 30%,
+            rgba(255, 81, 47, 0.1) 50%,
+            rgba(247, 147, 30, 0.15) 55%,
+            rgba(255, 187, 0, 0.1) 60%,
+            transparent 70%);
+    transform: rotate(0deg);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Particle Burst Container for Active Card */
+.problem-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(247, 147, 30, 0.15) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.3;
+    }
+}
+
+/* Active Card State - MAGNETIC & HOLOGRAPHIC */
+.problem-card.active-card {
+    border-color: rgba(247, 147, 30, 0.6);
+    box-shadow:
+        0 20px 60px rgba(247, 147, 30, 0.25),
+        0 0 40px rgba(255, 81, 47, 0.15),
+        0 0 0 1px rgba(247, 147, 30, 0.3) inset,
+        0 0 80px rgba(247, 147, 30, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 252, 248, 0.98) 100%);
+}
+
+.problem-card.active-card::before {
+    opacity: 1;
+    animation: holoShimmer 3s linear infinite;
+}
+
+.problem-card.active-card::after {
+    opacity: 1;
+}
+
+@keyframes holoShimmer {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Magnetic Hover Effect - 3D Tilt */
+.problem-card:hover {
+    border-color: rgba(247, 147, 30, 0.8);
+    box-shadow:
+        0 25px 70px rgba(247, 147, 30, 0.3),
+        0 0 50px rgba(255, 81, 47, 0.2),
+        0 0 0 2px rgba(247, 147, 30, 0.4) inset;
+    transform: translateY(-5px) !important;
+}
+
+.problem-card:hover::before {
+    opacity: 0.8;
+}
+
+/* Card Content Styling - REDESIGNED WITH MODERN ROUNDED SQUARE ICONS */
 .problem-card .icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #FF512F, #F7931E);
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FF512F 0%, #F7931E 50%, #FFBB00 100%);
+    background-size: 200% 200%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 32px;
     color: white;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 15px rgba(247, 147, 30, 0.25);
+    margin-bottom: 24px;
+    box-shadow:
+        0 10px 30px rgba(247, 147, 30, 0.4),
+        0 0 25px rgba(255, 81, 47, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    position: relative;
+    animation: iconFloat 3s ease-in-out infinite, gradientShift 6s ease infinite;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Icon Glow Ring */
+.problem-card .icon::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(255, 81, 47, 0.5), rgba(247, 147, 30, 0.5));
+    filter: blur(12px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.problem-card.active-card .icon::before,
+.problem-card:hover .icon::before {
+    opacity: 1;
+    animation: pulseRing 2s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes pulseRing {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 0.3;
+    }
+}
+
+.problem-card.active-card .icon {
+    transform: scale(1.15);
+    box-shadow:
+        0 15px 40px rgba(247, 147, 30, 0.6),
+        0 0 35px rgba(255, 81, 47, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.problem-card:hover .icon {
+    transform: scale(1.2) rotate(8deg);
+    box-shadow:
+        0 18px 50px rgba(247, 147, 30, 0.7),
+        0 0 45px rgba(255, 81, 47, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .problem-card h3 {
-    font-size: 20px;
+    font-size: 22px;
     color: #1a1a1a;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .problem-card p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 500;
 }
 
-/* Positioning 8 Cards */
-/* Radius around 600px for optimum spacing */
+/* Static Card Positioning - JavaScript Controls Rotation */
 .card-wrapper:nth-child(1) {
     transform: rotateY(0deg) translateZ(600px);
 }
@@ -2155,10 +2379,13 @@ footer {
     transform: rotateY(315deg) translateZ(600px);
 }
 
-/* Hover Effects */
+/* Enhanced Hover Effects */
 .problem-card:hover {
-    border-color: #F7931E;
-    box-shadow: 0 0 30px rgba(247, 147, 30, 0.3);
+    border-color: rgba(247, 147, 30, 0.9);
+    box-shadow:
+        0 30px 80px rgba(247, 147, 30, 0.35),
+        0 0 60px rgba(255, 81, 47, 0.25),
+        0 0 0 2px rgba(247, 147, 30, 0.5) inset;
 }
 
 /* Responsive */

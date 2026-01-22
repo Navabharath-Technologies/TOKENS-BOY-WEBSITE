@@ -720,6 +720,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Click to Center Card
     cards.forEach((wrapper, index) => {
+        const card = wrapper.querySelector('.problem-card');
+        
         wrapper.addEventListener('click', () => {
             // We want this card at 0 deg.
             // Card Angle + currDeg = 0 => currDeg = -Card Angle
@@ -733,10 +735,92 @@ document.addEventListener('DOMContentLoaded', () => {
             targetDeg = desiredDeg;
             isPaused = true; // Stay centered
 
-            // Optionally resume after interaction?
-            // setTimeout(() => isPaused = false, 2000);
+            // Create ripple effect on click
+            createRipple(card, event);
         });
+
+        // MAGNETIC HOVER - 3D Tilt Effect
+        if (card) {
+            wrapper.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const cardCenterX = rect.left + rect.width / 2;
+                const cardCenterY = rect.top + rect.height / 2;
+                
+                // Calculate mouse position relative to card center
+                const mouseX = e.clientX - cardCenterX;
+                const mouseY = e.clientY - cardCenterY;
+                
+                // Calculate tilt angles (max 15 degrees)
+                const maxTilt = 15;
+                const tiltX = (mouseY / (rect.height / 2)) * maxTilt;
+                const tiltY = -(mouseX / (rect.width / 2)) * maxTilt;
+                
+                // Apply magnetic tilt (preserve existing transform from JS)
+                const currentTransform = card.style.transform;
+                const baseTransform = currentTransform.split('scale')[0]; // Keep rotation
+                const scaleMatch = currentTransform.match(/scale\(([^)]+)\)/);
+                const currentScale = scaleMatch ? scaleMatch[1] : '1';
+                
+                card.style.transform = `${baseTransform} scale(${currentScale}) perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+                card.style.transition = 'transform 0.1s ease-out';
+            });
+
+            wrapper.addEventListener('mouseleave', () => {
+                // Reset tilt smoothly
+                card.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                // Remove the perspective tilt, keep base transform
+                setTimeout(() => {
+                    const currentTransform = card.style.transform;
+                    const baseTransform = currentTransform.split('perspective')[0];
+                    card.style.transform = baseTransform;
+                }, 10);
+            });
+        }
     });
+
+    // Ripple Effect Function
+    function createRipple(card, event) {
+        const ripple = document.createElement('div');
+        const rect = card.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = event.clientX - rect.left - size / 2;
+        const y = event.clientY - rect.top - size / 2;
+
+        ripple.style.cssText = `
+            position: absolute;
+            width: ${size}px;
+            height: ${size}px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(247, 147, 30, 0.4) 0%, transparent 70%);
+            left: ${x}px;
+            top: ${y}px;
+            pointer-events: none;
+            animation: rippleExpand 0.8s ease-out;
+            z-index: 10;
+        `;
+
+        card.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 800);
+    }
+
+    // Add ripple animation to stylesheet dynamically
+    if (!document.getElementById('ripple-animation')) {
+        const style = document.createElement('style');
+        style.id = 'ripple-animation';
+        style.textContent = `
+            @keyframes rippleExpand {
+                0% {
+                    transform: scale(0);
+                    opacity: 1;
+                }
+                100% {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    }
 
     // 4. Touch Support (Mobile Swiping - Improved for Android)
     let touchStartX = 0;

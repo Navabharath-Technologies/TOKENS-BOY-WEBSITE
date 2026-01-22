@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Main Page -->
+    <url>
+        <loc>https://www.tokensboy.com/</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <!-- Alternate language versions -->
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.tokensboy.com/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.tokensboy.com/?lang=es" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tokensboy.com/?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.tokensboy.com/?lang=de" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://www.tokensboy.com/?lang=it" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://www.tokensboy.com/?lang=pt" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.tokensboy.com/?lang=ar" />
+        <xhtml:link rel="alternate" hreflang="kn" href="https://www.tokensboy.com/?lang=kn" />
+    </url>
+    
+    <!-- Home Section -->
+    <url>
+        <loc>https://www.tokensboy.com/#home</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- About Us Section -->
+    <url>
+        <loc>https://www.tokensboy.com/#about</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Services Section -->
+    <url>
+        <loc>https://www.tokensboy.com/#services</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- FAQ Section -->
+    <url>
+        <loc>https://www.tokensboy.com/#faq</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Appointment/Get Started Section -->
+    <url>
+        <loc>https://www.tokensboy.com/#appointment</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Contact Section -->
+    <url>
+        <loc>https://www.tokensboy.com/#contact</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
