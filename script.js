@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'faq': 'FAQ',
                 'contact': 'Contact',
                 'book': 'Book Appointment',
+                'tag': 'Tokens Boy',
                 'hero-title': 'Tokens Boy',
                 'hero-subtitle': 'Easy Tokens for Indian Clinics',
                 'hero-desc': 'A streamlined, digitized queue and scheduling system designed for modern healthcare. Reduce wait times, eliminate confusion, and significantly improve patient experience with our smart token management solution.',
@@ -162,7 +163,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 'google-play': 'Google Play',
                 'download-on': 'Download on the',
                 'app-store': 'App Store',
-                'page-title': 'Tokens Boy - Easy Tokens for Indian Clinics'
+                'page-title': 'Tokens Boy - Easy Tokens for Indian Clinics',
+                'location-title': 'Our Location',
+                'location-desc': 'Bangalore, Karnataka, India',
+                'hours-title': 'Business Hours',
+                'hours-desc': 'Mon - Sat: 9:00 AM - 7:00 PM',
+                'form-name': 'Full Name',
+                'form-email': 'Email Address',
+                'form-phone': 'Phone Number',
+                'form-message': 'Your Message',
+                'form-submit': 'Send Message',
+                'form-success': 'Thank you! Your message has been sent successfully. We will get back to you soon.',
+                'form-name-placeholder': 'Enter your full name',
+                'form-email-placeholder': 'Enter your email',
+                'form-phone-placeholder': 'Enter your phone number',
+                'form-message-placeholder': 'How can we help you?',
+                'form-clinic-name': 'Clinic/Hospital Name',
+                'form-clinic-name-placeholder': 'Enter clinic/hospital name',
+                'form-location': 'Clinic/Hospital Address',
+                'form-location-placeholder': 'Enter clinic/hospital address',
+                'form-specialization': 'Specialization',
+                'form-specialization-placeholder': 'Enter your specialization',
+                'form-mandatory': 'This field is mandatory',
+                'form-phone-error': 'Please enter a valid phone number',
+                'form-email-error': 'Please enter a valid email address (hash # is not allowed)',
+                'how-to-use-title': 'How does Tokens Boy work?',
+                'how-to-use-subtitle': 'Watch our quick demonstrations to see how easy it is to manage your clinic and book appointments.',
+                'doctor-demo-title': 'For Doctors,',
+                'doctor-demo-desc': 'Learn how doctors can manage their clinic, view queues, and update token status in real-time.',
+                'patient-demo-title': 'For Patients,',
+                'patient-demo-desc': 'See how easy it is for patients to search for clinics, book slots, and track live status.',
+                'subtitles-label': 'Demonstration Script:',
+                'doctor-demo-subtitles': 'Welcome to the Tokens Boy Doctor App. In this video, we will show you how to manage your daily clinic schedule, view the live token queue, and update patient statuses in real-time with just one click.',
+                'patient-demo-subtitles': 'Experience the convenience of booking appointments on the go. This demo walks you through finding the best local clinics, checking real-time token availability, and securing your slot instantly.'
             },
             'KN': {
                 'home': 'ಮನೆ',
@@ -171,6 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'faq': 'FAQ',
                 'contact': 'ಸಂಪರ್ಕಿಸಿ',
                 'book': 'ನೇಮಕಾತಿ ಕಾಯ್ದಿರಿಸಿ',
+                'tag': 'ಟೋಕನ್ಸ್ ಬಾಯ್',
                 'hero-title': 'ಟೋಕನ್ಸ್ ಬಾಯ್',
                 'hero-subtitle': 'ಭಾರತೀಯ ಚಿಕಿತ್ಸಾಲಯಗಳಿಗೆ ಸುಲಭ ಟೋಕನ್ಗಳು',
                 'hero-desc': 'ಆಧುನಿಕ ಆರೋಗ್ಯ ರಕ್ಷಣೆಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಸುವ್ಯವಸ್ಥಿತ, ಡಿಜಿಟೈಸ್ಡ್ ಕ್ಯೂ ಮತ್ತು ಶೆಡ್ಯೂಲಿಂಗ್ ಸಿಸ್ಟಮ್. ಕಾಯುವ ಸಮಯವನ್ನು ಕಡಿಮೆ ಮಾಡಿ, ಗೊಂದಲವನ್ನು ನಿವಾರಿಸಿ ಮತ್ತು ನಮ್ಮ ಸ್ಮಾರ್ಟ್ ಟೋಕನ್ ಮ್ಯಾನೇಜ್ಮೆಂಟ್ ಪರಿಹಾರದೊಂದಿಗೆ ರೋಗಿಗಳ ಅನುಭವವನ್ನು ಗಮನಾರ್ಹವಾಗಿ ಸುಧಾರಿಸಿ.',
@@ -231,7 +265,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 'google-play': 'Google Play',
                 'download-on': 'ಇದರಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ',
                 'app-store': 'App Store',
-                'page-title': 'ಟೋಕನ್ಸ್ ಬಾಯ್ - ಭಾರತೀಯ ಚಿಕಿತ್ಸಾಲಯಗಳಿಗೆ ಸುಲಭ ಟೋಕನ್ಗಳು'
+                'page-title': 'ಟೋಕನ್ಸ್ ಬಾಯ್ - ಭಾರತೀಯ ಚಿಕಿತ್ಸಾಲಯಗಳಿಗೆ ಸುಲಭ ಟೋಕನ್ಗಳು',
+                'location-title': 'ನಮ್ಮ ಸ್ಥಳ',
+                'location-desc': 'ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ, ಭಾರತ',
+                'hours-title': 'ವ್ಯವಹಾರದ ಸಮಯ',
+                'hours-desc': 'ಸೋಮ - ಶನಿ: 9:00 AM - 7:00 PM',
+                'form-name': 'ಪೂರ್ಣ ಹೆಸರು',
+                'form-email': 'ಇಮೇಲ್ ವಿಳಾಸ',
+                'form-phone': 'ಫೋನ್ ಸಂಖ್ಯೆ',
+                'form-message': 'ನಿಮ್ಮ ಸಂದೇಶ',
+                'form-submit': 'ಸಂದೇಶ ಕಳುಹಿಸಿ',
+                'form-success': 'ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಕಳುಹಿಸಲಾಗಿದೆ. ನಾವು ಶೀಘ್ರದಲ್ಲೇ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತೇವೆ.',
+                'form-name-placeholder': 'ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರನ್ನು ನಮೂದಿಸಿ',
+                'form-email-placeholder': 'ನಿಮ್ಮ ಇಮೇಲ್ ನಮೂದಿಸಿ',
+                'form-phone-placeholder': 'ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ',
+                'form-message-placeholder': 'ನಾವು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?',
+                'form-clinic-name': 'ಕ್ಲಿನಿಕ್/ಆಸ್ಪತ್ರೆಯ ಹೆಸರು',
+                'form-clinic-name-placeholder': 'ಕ್ಲಿನಿಕ್/ಆಸ್ಪತ್ರೆಯ ಹೆಸರನ್ನು ನಮೂದಿಸಿ',
+                'form-location': 'ಕ್ಲಿನಿಕ್/ಆಸ್ಪತ್ರೆ ವಿಳಾಸ',
+                'form-location-placeholder': 'ಕ್ಲಿನಿಕ್/ಆಸ್ಪತ್ರೆ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ',
+                'form-specialization': 'ವಿಶೇಷತೆ',
+                'form-specialization-placeholder': 'ನಿಮ್ಮ ವಿಶೇಷತೆಯನ್ನು ನಮೂದಿಸಿ',
+                'form-mandatory': 'ಈ ಕ್ಷೇತ್ರ ಕಡ್ಡابةವಾಗಿದೆ',
+                'form-phone-error': 'ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ',
+                'form-email-error': 'ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ (# ಚಿಹ್ನೆಯನ್ನು ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ)',
+                'how-to-use-title': 'ಟೋಕನ್ಸ್ ಬಾಯ್ ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ?',
+                'how-to-use-subtitle': 'ನಿಮ್ಮ ಕ್ಲಿನಿಕ್ ಅನ್ನು ನಿರ್ವಹಿಸುವುದು ಮತ್ತು ನೇಮಕಾತಿಗಳನ್ನು ಕಾಯ್ದಿರಿಸುವುದು ಎಷ್ಟು ಸುಲಭ ಎಂದು ನೋಡಲು ನಮ್ಮ ತ್ವರಿತ ಪ್ರಾತ್ಯಕ್ಷಿಕೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ.',
+                'doctor-demo-title': 'ವೈದ್ಯರಿಗಾಗಿ,',
+                'doctor-demo-desc': 'ವೈದ್ಯರು ತಮ್ಮ ಕ್ಲಿನಿಕ್ ಅನ್ನು ಹೇಗೆ ನಿರ್ವಹಿಸಬಹುದು, ಸರತಿ ಸಾಲುಗಳನ್ನು ವೀಕ್ಷಿಸಬಹುದು ಮತ್ತು ನೈಜ ಸಮಯದಲ್ಲಿ ಟೋಕನ್ ಸ್ಥಿತಿಯನ್ನು ಹೇಗೆ ನವೀಕರಿಸಬಹುದು ಎಂಬುದನ್ನು ತಿಳಿಯಿರಿ.',
+                'patient-demo-title': 'ರೋಗಿಗಳಿಗಾಗಿ,',
+                'patient-demo-desc': 'ರೋಗಿಗಳು ಚಿಕಿತ್ಸಾಲಯಗಳನ್ನು ಹುಡುಕುವುದು, ಸ್ಲಾಟ್‌ಗಳನ್ನು ಕಾಯ್ದಿರಿಸುವುದು ಮತ್ತು ನೇರ ಸ್ಥಿತಿಯನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುವುದು ಎಷ್ಟು ಸುಲಭ ಎಂದು ನೋಡಿ.',
+                'subtitles-label': 'ಪ್ರಾತ್ಯಕ್ಷಿಕೆ ಸ್ಕ್ರಿಪ್ಟ್:',
+                'doctor-demo-subtitles': 'ಟೋಕನ್ ಬಾಯ್ ಡಾಕ್ಟರ್ ಆಪ್‌ಗೆ ಸ್ವಾಗತ. ಈ ವೀಡಿಯೊದಲ್ಲಿ, ನಿಮ್ಮ ದೈನಂದಿನ ಕ್ಲಿನಿಕ್ ವೇಳಾಪಟ್ಟಿಯನ್ನು ಹೇಗೆ ನಿರ್ವಹಿಸುವುದು, ಲೈವ್ ಟೋಕನ್ ಕ್ಯೂ ವೀಕ್ಷಿಸುವುದು ಮತ್ತು ಕೇವಲ ಒಂದು ಕ್ಲಿಕ್‌ನಲ್ಲಿ ರೋಗಿಗಳ ಸ್ಥಿತಿಗಳನ್ನು ನೈಜ ಸಮಯದಲ್ಲಿ ನವೀಕರಿಸುವುದು ಹೇಗೆ ಎಂದು ನಾವು ನಿಮಗೆ ತೋರಿಸುತ್ತೇವೆ.',
+                'patient-demo-subtitles': 'ಪ್ರಯಾಣದಲ್ಲಿರುವಾಗ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್‌ಗಳನ್ನು ಬುಕ್ ಮಾಡುವ ಸೌಕರ್ಯವನ್ನು ಅನುಭವಿಸಿ. ಈ ಡೆಮೊ ನಿಮಗೆ ಉತ್ತಮ ಸ್ಥಳೀಯ ಚಿಕಿತ್ಸಾಲಯಗಳನ್ನು ಕಂಡುಹಿಡಿಯುವುದು, ನೈಜ-ಸಮಯದ ಟೋಕನ್ ಲಭ್ಯತೆಯನ್ನು ಪರಿಶೀಲಿಸುವುದು ಮತ್ತು ನಿಮ್ಮ ಸ್ಲಾಟ್ ಅನ್ನು ತಕ್ಷಣವೇ ಸುರಕ್ಷಿತಗೊಳಿಸುವುದರ ಮೂಲಕ ಮಾರ್ಗದರ್ಶನ ನೀಡುತ್ತದೆ.'
             },
             'ES': {
                 'home': 'Inicio', 'about': 'Sobre Nosotros', 'services': 'Servicios', 'faq': 'Preguntas Frecuentes', 'contact': 'Contacto', 'book': 'Reservar Cita',
@@ -275,12 +341,47 @@ document.addEventListener('DOMContentLoaded', () => {
                 'email-title': 'Correo Electrónico', 'email-desc': 'support@tokensboy.com',
                 'quick-links': 'Enlaces Rápidos', 'features': 'Características', 'contact-info': 'Información de Contacto',
                 'f1': 'Actualizaciones en Vivo', 'f2': 'Gestión de Colas', 'f3': 'Estado en Tiempo Real', 'f4': 'Notificaciones SMS', 'f5': 'Optimización de Tiempo',
-                'brand-name': 'Tokens Boy', 'get-it-on': 'Consíguelo en', 'google-play': 'Google Play', 'download-on': 'Descárgalo en', 'app-store': 'App Store',
-                'page-title': 'Tokens Boy - Tokens Fáciles para Clínicas Indias'
+                'brand-name': 'Tokens Boy', 'get-it-on': 'Consíguelo en', 'google-play': 'Google Play', 'download-on': 'Descárgalo en',
+                'app-store': 'App Store',
+                'page-title': 'Tokens Boy - Tokens Fáciles para Clínicas Indias',
+                'location-title': 'Nuestra Ubicación',
+                'location-desc': 'Bangalore, Karnataka, India',
+                'hours-title': 'Horario de Atención',
+                'hours-desc': 'Lun - Sáb: 9:00 AM - 7:00 PM',
+                'form-name': 'Nombre Completo',
+                'form-email': 'Correo Electrónico',
+                'form-phone': 'Número de Teléfono',
+                'form-message': 'Tu Mensaje',
+                'form-submit': 'Enviar Mensaje',
+                'form-success': '¡Gracias! Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo pronto.',
+                'form-name-placeholder': 'Ingrese su nombre completo',
+                'form-email-placeholder': 'Ingrese su correo electrónico',
+                'form-phone-placeholder': 'Ingrese su número de teléfono',
+                'form-message-placeholder': '¿Cómo podemos ayudarle?',
+                'form-clinic-name': 'Nombre de la Clínica/Hospital',
+                'form-clinic-name-placeholder': 'Ingrese el nombre de la clínica/hospital',
+                'form-location': 'Dirección de la Clínica/Hospital',
+                'form-location-placeholder': 'Ingrese la dirección de la clínica/hospital',
+                'form-specialization': 'Especialización',
+                'form-specialization-placeholder': 'Ingrese su especialización',
+                'form-mandatory': 'Este campo es obligatorio',
+                'form-phone-error': 'Por favor, ingrese un número de teléfono válido',
+                'form-email-error': 'Por favor, ingrese un correo electrónico válido (el símbolo # no está permitido)',
+                'how-to-use-title': '¿Cómo funciona Tokens Boy?',
+                'how-to-use-subtitle': 'Vea nuestras demostraciones rápidas para ver lo fácil que es administrar su clínica y reservar citas.',
+                'doctor-demo-title': 'Demo de la App para Doctores',
+                'doctor-demo-desc': 'Aprenda cómo los doctores pueden administrar su clínica, ver colas y actualizar el estado de los tokens en tiempo real.',
+                'patient-demo-title': 'Demo de la App para Pacientes',
+                'patient-demo-desc': 'Vea lo fácil que es para los pacientes buscar clínicas, reservar turnos y rastrear el estado en vivo.',
+                'subtitles-label': 'Guion de la Demostración:',
+                'doctor-demo-subtitles': 'Bienvenido a la App para Doctores de Tokens Boy. En este video, le mostraremos cómo administrar su agenda diaria de la clínica, ver la cola de tokens en vivo y actualizar los estados de los pacientes en tiempo real con solo un clic.',
+                'patient-demo-subtitles': 'Experimente la comodidad de reservar citas sobre la marcha. Esta demostración lo guiará para encontrar las mejores clínicas locales, verificar la disponibilidad de tokens en tiempo real y asegurar su turno al instante.'
             },
             'FR': {
-                'home': 'Accueil', 'about': 'À Propos', 'services': 'Services', 'faq': 'FAQ', 'contact': 'Contact', 'book': 'Prendre RDV',
-                'hero-title': 'Jetons Garçon', 'hero-subtitle': 'Tokens Faciles pour Cliniques Indiennes',
+                'home': 'Accueil', 'about': 'À Propos', 'services': 'Services', 'faq': 'Questions Fréquentes', 'contact': 'Contact', 'book': 'Prendre RDV',
+                'hero-title': 'Jetons Garçon',
+                'hero-subtitle': 'Tokens Faciles pour Cliniques Indiennes',
+                'tag': 'Tokens Boy',
                 'hero-desc': 'Un système numérique de gestion de file d\'attente conçu pour la santé moderne. Réduisez l\'attente, éliminez la confusion et améliorez l\'expérience patient avec notre solution intelligente.',
                 'learn-more': 'En Savoir Plus', 'about-subtitle': 'Un système numérique conçu pour la gestion moderne de la santé.',
                 'about-f1': 'Réduit les appels inutiles et la coordination manuelle.',
@@ -320,8 +421,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 'email-title': 'E-mail', 'email-desc': 'support@tokensboy.com',
                 'quick-links': 'Liens Rapides', 'features': 'Fonctionnalités', 'contact-info': 'Coordonnées',
                 'f1': 'Mises à jour Direct', 'f2': 'Gestion de File', 'f3': 'Statut Live', 'f4': 'Alertes SMS', 'f5': 'Optimisation du Temps',
-                'brand-name': 'Tokens Boy', 'get-it-on': 'Disponible sur', 'google-play': 'Google Play', 'download-on': 'Télécharger sur', 'app-store': 'App Store',
-                'page-title': 'Tokens Boy - Tokens Faciles pour Cliniques Indiennes'
+                'brand-name': 'Tokens Boy', 'get-it-on': 'Disponible sur', 'google-play': 'Google Play', 'download-on': 'Télécharger sur',
+                'app-store': 'App Store',
+                'page-title': 'Tokens Boy - Tokens Faciles pour Cliniques Indiennes',
+                'location-title': 'Notre Emplacement',
+                'location-desc': 'Bangalore, Karnataka, Inde',
+                'hours-title': 'Heures d\'Ouverture',
+                'hours-desc': 'Lun - Sam: 9h00 - 19h00',
+                'form-name': 'Nom Complet',
+                'form-email': 'Adresse E-mail',
+                'form-phone': 'Numéro de Téléphone',
+                'form-message': 'Votre Message',
+                'form-submit': 'Envoyer le Message',
+                'form-success': 'Merci ! Votre message a été envoyé avec succès. Nous vous recontacterons bientôt.',
+                'form-name-placeholder': 'Entrez votre nom complet',
+                'form-email-placeholder': 'Entrez votre adresse e-mail',
+                'form-phone-placeholder': 'Entrez votre numéro de téléphone',
+                'form-message-placeholder': 'Comment pouvons-nous vous aider ?',
+                'form-clinic-name': 'Nom de la Clinique/Hôpital',
+                'form-clinic-name-placeholder': 'Entrez le nom de la clinique/hôpital',
+                'form-location': 'Adresse de la Clinique/Hôpital',
+                'form-location-placeholder': 'Entrez l\'adresse de la clinique/hôpital',
+                'form-specialization': 'Spécialisation',
+                'form-specialization-placeholder': 'Entrez votre spécialisation',
+                'form-mandatory': 'Ce champ est obligatoire',
+                'form-phone-error': 'Veuillez entrer un numéro de téléphone valide',
+                'form-email-error': 'Veuillez entrer une adresse e-mail valide (le symbole # n\'est pas autorisé)',
+                'how-to-use-title': 'Comment fonctionne Tokens Boy ?',
+                'how-to-use-subtitle': 'Regardez nos démonstrations rapides pour voir à quel point il est facile de gérer votre clinique et de prendre rendez-vous.',
+                'doctor-demo-title': 'Démo de l\'App Docteur',
+                'doctor-demo-desc': 'Découvrez comment les médecins peuvent gérer leur clinique, voir les files d\'attente et mettre à jour le statut des jetons en temps réel.',
+                'patient-demo-title': 'Démo de l\'App Patient',
+                'patient-demo-desc': 'Voyez à quel point il est facile pour les patients de rechercher des cliniques, de réserver des créneaux et de suivre le statut en direct.',
+                'subtitles-label': 'Script de Démonstration :',
+                'doctor-demo-subtitles': 'Bienvenue sur l\'application Tokens Boy Doctor. Dans cette vidéo, nous allons vous montrer comment gérer votre emploi du temps quotidien, consulter la file d\'attente des jetons en direct et mettre à jour le statut des patients en temps réel en un seul clic.',
+                'patient-demo-subtitles': 'Découvrez la commodité de prendre rendez-vous en déplacement. Cette démo vous guide pour trouver les meilleures cliniques locales, vérifier la disponibilité des jetons en temps réel et réserver votre créneau instantanément.'
             },
             'DE': {
                 'home': 'Startseite', 'about': 'Über Uns', 'services': 'Dienste', 'faq': 'FAQ', 'contact': 'Kontakt', 'book': 'Termin buchen',
@@ -365,12 +499,47 @@ document.addEventListener('DOMContentLoaded', () => {
                 'email-title': 'E-Mail', 'email-desc': 'support@tokensboy.com',
                 'quick-links': 'Quick-Links', 'features': 'Features', 'contact-info': 'Kontakt-Infos',
                 'f1': 'Echtzeit-Updates', 'f2': 'Warteschlangen', 'f3': 'Live-Status', 'f4': 'SMS-Alarme', 'f5': 'Zeitoptimierung',
-                'brand-name': 'Tokens Boy', 'get-it-on': 'JETZT BEI', 'google-play': 'Google Play', 'download-on': 'Laden im', 'app-store': 'App Store',
-                'page-title': 'Tokens Boy - Einfache Tokens für indische Kliniken'
+                'brand-name': 'Tokens Boy', 'get-it-on': 'JETZT BEI', 'google-play': 'Google Play', 'download-on': 'Laden im',
+                'app-store': 'App Store',
+                'page-title': 'Tokens Boy - Einfache Tokens für indische Kliniken',
+                'location-title': 'Unser Standort',
+                'location-desc': 'Bangalore, Karnataka, Indien',
+                'hours-title': 'Öffnungszeiten',
+                'hours-desc': 'Mo - Sa: 9:00 - 19:00 Uhr',
+                'form-name': 'Vollständiger Name',
+                'form-email': 'E-Mail-Adresse',
+                'form-phone': 'Telefonnummer',
+                'form-message': 'Ihre Nachricht',
+                'form-submit': 'Nachricht senden',
+                'form-success': 'Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.',
+                'form-name-placeholder': 'Geben Sie Ihren vollen Namen ein',
+                'form-email-placeholder': 'Geben Sie Ihre E-Mail ein',
+                'form-phone-placeholder': 'Geben Sie Ihre Telefonnummer ein',
+                'form-message-placeholder': 'Wie können wir Ihnen helfen?',
+                'form-clinic-name': 'Klinik-/Krankenhausname',
+                'form-clinic-name-placeholder': 'Geben Sie den Klinik-/Krankenhausnamen ein',
+                'form-location': 'Klinik-/Krankenhausadresse',
+                'form-location-placeholder': 'Geben Sie die Klinik-/Krankenhausadresse ein',
+                'form-specialization': 'Spezialisierung',
+                'form-specialization-placeholder': 'Geben Sie Ihre Spezialisierung ein',
+                'form-mandatory': 'Dieses Feld ist obligatorisch',
+                'form-phone-error': 'Bitte geben Sie eine gültige Telefonnummer ein',
+                'form-email-error': 'Bitte geben Sie eine gültige E-Mail-Adresse ein (das Symbol # ist nicht zulässig)',
+                'how-to-use-title': 'Wie funktioniert Tokens Boy?',
+                'how-to-use-subtitle': 'Sehen Sie sich unsere Kurzdemos an, um zu sehen, wie einfach es ist, Ihre Klinik zu verwalten und Termine zu buchen.',
+                'doctor-demo-title': 'Arzt-App-Demo',
+                'doctor-demo-desc': 'Erfahren Sie, wie Ärzte ihre Klinik verwalten, Warteschlangen einsehen und den Token-Status in Echtzeit aktualisieren können.',
+                'patient-demo-title': 'Patienten-App-Demo',
+                'patient-demo-desc': 'Sehen Sie, wie einfach es für Patienten ist, nach Kliniken zu suchen, Termine zu buchen und den Live-Status zu verfolgen.',
+                'subtitles-label': 'Demonstrationsskript:',
+                'doctor-demo-subtitles': 'Willkommen bei der Tokens Boy Doctor App. In diesem Video zeigen wir Ihnen, wie Sie Ihren täglichen Klinikplan verwalten, die Live-Token-Warteschlange anzeigen und den Patientenstatus in Echtzeit mit nur einem Klick aktualisieren können.',
+                'patient-demo-subtitles': 'Erleben Sie den Komfort, Termine von unterwegs zu buchen. Diese Demo führt Sie durch die Suche nach den besten lokalen Kliniken, die Überprüfung der Token-Verfügbarkeit in Echtzeit und die sofortige Sicherung Ihres Termins.'
             },
             'IT': {
                 'home': 'Home', 'about': 'Chi Siamo', 'services': 'Servizi', 'faq': 'Domande', 'contact': 'Contatti', 'book': 'Prenota Cita',
-                'hero-title': 'Ragazzo dei Gettoni', 'hero-subtitle': 'Token Semplici per Cliniche Indiane',
+                'hero-title': 'Ragazzo dei Gettoni',
+                'hero-subtitle': 'Token Semplici per Cliniche Indiane',
+                'tag': 'Tokens Boy',
                 'hero-desc': 'Un sistema digitale di code e programmazione per la sanità moderna. Riduci i tempi di attesa e migliora l\'esperienza del paziente con la nostra soluzione.',
                 'learn-more': 'Leggi di più', 'about-subtitle': 'Sistema digitale per la sanità moderna.',
                 'about-f1': 'Riduce le chiamate e il lavoro manuale.',
@@ -410,8 +579,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 'email-title': 'E-mail', 'email-desc': 'support@tokensboy.com',
                 'quick-links': 'Link Rapidi', 'features': 'Funzioni', 'contact-info': 'Informazioni',
                 'f1': 'Tempo Reale', 'f2': 'Gestione Code', 'f3': 'Stato Live', 'f4': 'SMS Alert', 'f5': 'Ottimizzazione',
-                'brand-name': 'Tokens Boy', 'get-it-on': 'DISPONIBILE SU', 'google-play': 'Google Play', 'download-on': 'Scarica su', 'app-store': 'App Store',
-                'page-title': 'Tokens Boy - Token Semplici per Cliniche Indiane'
+                'brand-name': 'Tokens Boy', 'get-it-on': 'DISPONIBILE SU', 'google-play': 'Google Play', 'download-on': 'Scarica su',
+                'app-store': 'App Store',
+                'page-title': 'Tokens Boy - Token Semplici per Cliniche Indiane',
+                'location-title': 'La Nostra Posizione',
+                'location-desc': 'Bangalore, Karnataka, India',
+                'hours-title': 'Orari di Lavoro',
+                'hours-desc': 'Lun - Sab: 9:00 - 19:00',
+                'form-name': 'Nome Completo',
+                'form-email': 'Indirizzo Email',
+                'form-phone': 'Numero di Telefono',
+                'form-message': 'Il Tuo Messaggio',
+                'form-submit': 'Invia Messaggio',
+                'form-success': 'Grazie! Il tuo messaggio è stato inviato correttamente. Ti ricontatteremo al più presto.',
+                'form-name-placeholder': 'Inserisci il tuo nome completo',
+                'form-email-placeholder': 'Inserisci la tua email',
+                'form-phone-placeholder': 'Inserisci il tuo numero di telefono',
+                'form-message-placeholder': 'Come possiamo aiutarti?',
+                'form-clinic-name': 'Nome della Clinica/Ospedale',
+                'form-clinic-name-placeholder': 'Inserire il nome della clinica/ospedale',
+                'form-location': 'Indirizzo della Clinica/Ospedale',
+                'form-location-placeholder': 'Inserisci l\'indirizzo della clinica/ospedale',
+                'form-specialization': 'Specializzazione',
+                'form-specialization-placeholder': 'Inserisci la tua specializzazione',
+                'form-mandatory': 'Questo campo è obbligatorio',
+                'form-phone-error': 'Inserisci un numero di telefono valido',
+                'form-email-error': 'Inserisci un indirizzo email valido (il simbolo # non è consentito)',
+                'how-to-use-title': 'Come funziona Tokens Boy?',
+                'how-to-use-subtitle': 'Guarda le nostre brevi dimostrazioni per vedere quanto è facile gestire la tua clinica e prenotare appuntamenti.',
+                'doctor-demo-title': 'Demo dell\'App per Medici',
+                'doctor-demo-desc': 'Scopri come i medici possono gestire la loro clinica, visualizzare le code e aggiornare lo stato dei token in tempo reale.',
+                'patient-demo-title': 'Demo dell\'App per Pazienti',
+                'patient-demo-desc': 'Guarda quanto è facile per i pazienti cercare cliniche, prenotare slot e monitorare lo stato in tempo reale.',
+                'subtitles-label': 'Script della Dimostrazione:',
+                'doctor-demo-subtitles': 'Benvenuti nell\'App Doctor di Tokens Boy. In questo video vi mostreremo come gestire il vostro programma giornaliero, visualizzare la coda dei token in tempo reale e aggiornare lo stato dei pazienti con un solo clic.',
+                'patient-demo-subtitles': 'Sperimentate la comodità di prenotare appuntamenti ovunque vi troviate. Questa demo vi guiderà nella ricerca delle migliori cliniche locali, nel controllo della disponibilità dei token in tempo reale e nella prenotazione istantanea del vostro slot.'
             },
             'PT': {
                 'home': 'Início', 'about': 'Sobre Nós', 'services': 'Serviços', 'faq': 'Perguntas', 'contact': 'Contatos', 'book': 'Agendar Cita',
@@ -455,8 +657,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 'email-title': 'E-mail', 'email-desc': 'support@tokensboy.com',
                 'quick-links': 'Links Rápidos', 'features': 'Funcionalidades', 'contact-info': 'Informações',
                 'f1': 'Tempo Real', 'f2': 'Gestão de Filas', 'f3': 'Status Live', 'f4': 'Alertas SMS', 'f5': 'Otimização',
-                'brand-name': 'Tokens Boy', 'get-it-on': 'DISPONÍVEL NO', 'google-play': 'Google Play', 'download-on': 'Baixar na', 'app-store': 'App Store',
-                'page-title': 'Tokens Boy - Tokens Fáceis para Clínicas Indianas'
+                'brand-name': 'Tokens Boy', 'get-it-on': 'DISPONÍVEL NO', 'google-play': 'Google Play', 'download-on': 'Baixar na',
+                'app-store': 'App Store',
+                'page-title': 'Tokens Boy - Tokens Fácéis para Clínicas Indianas',
+                'location-title': 'Nossa Localização',
+                'location-desc': 'Bangalore, Karnataka, Índia',
+                'hours-title': 'Horário de Funcionamento',
+                'hours-desc': 'Seg - Sáb: 9:00 - 19:00',
+                'form-name': 'Nome Completo',
+                'form-email': 'Endereço de E-mail',
+                'form-phone': 'Número de Telefone',
+                'form-message': 'Sua Mensagem',
+                'form-submit': 'Enviar Mensagem',
+                'form-success': 'Obrigado! Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.',
+                'form-name-placeholder': 'Digite seu nome completo',
+                'form-email-placeholder': 'Digite seu e-mail',
+                'form-phone-placeholder': 'Digite seu número de telefone',
+                'form-message-placeholder': 'Como podemos ajudar?',
+                'form-clinic-name': 'Nome da Clínica/Hospital',
+                'form-clinic-name-placeholder': 'Insira o nome da clínica/hospital',
+                'form-location': 'Endereço da Clínica/Hospital',
+                'form-location-placeholder': 'Insira o endereço da clínica/hospital',
+                'form-specialization': 'Especialização',
+                'form-specialization-placeholder': 'Insira sua especialização',
+                'form-mandatory': 'Este campo é obrigatório',
+                'form-phone-error': 'Por favor, insira um número de telefone válido',
+                'form-email-error': 'Por favor, insira um endereço de e-mail válido (o símbolo # não é permitido)',
+                'how-to-use-title': 'Como funciona o Tokens Boy?',
+                'how-to-use-subtitle': 'Assista às nossas demonstrações rápidas para ver como é fácil gerenciar sua clínica e agendar consultas.',
+                'doctor-demo-title': 'Demo do App Médico',
+                'doctor-demo-desc': 'Saiba como os médicos podem gerenciar sua clínica, visualizar filas e atualizar o status dos tokens em tempo real.',
+                'patient-demo-title': 'Demo do App do Paciente',
+                'patient-demo-desc': 'Veja como é fácil para os pacientes pesquisar clínicas, agendar horários e acompanhar o status ao vivo.',
+                'subtitles-label': 'Roteiro da Demonstração:',
+                'doctor-demo-subtitles': 'Bem-vindo ao Tokens Boy Doctor App. Neste vídeo, mostraremos como gerenciar sua agenda diária da clínica, visualizar a fila de tokens ao vivo e atualizar o status dos pacientes em tempo real com apenas um clique.',
+                'patient-demo-subtitles': 'Experimente a conveniência de agendar consultas em qualquer lugar. Esta demonstração guia você na busca pelas melhores clínicas locais, na verificação da disponibilidade de tokens em tempo real e na reserva instantânea de sua vaga.'
             },
             'AR': {
                 'home': 'الرئيسية', 'about': 'من نحن', 'services': 'الخدمات', 'faq': 'أسئلة شائعة', 'contact': 'اتصل بنا', 'book': 'حجز موعد',
@@ -500,8 +735,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 'email-title': 'البريد الإلكتروني', 'email-desc': 'support@tokensboy.com',
                 'quick-links': 'روابط سريعة', 'features': 'المميزات', 'contact-info': 'معلومات التواصل',
                 'f1': 'تحديثات لحظية', 'f2': 'إدارة طوابير', 'f3': 'حالة مباشرة', 'f4': 'تنبيهات SMS', 'f5': 'تحسين الوقت',
-                'brand-name': 'Tokens Boy', 'get-it-on': 'متوفر على', 'google-play': 'Google Play', 'download-on': 'حمل من', 'app-store': 'App Store',
-                'page-title': 'Tokens Boy - نظام توكن سهل للعيادات'
+                'brand-name': 'Tokens Boy', 'get-it-on': 'متوفر على', 'google-play': 'Google Play', 'download-on': 'حمل من',
+                'app-store': 'App Store',
+                'page-title': 'Tokens Boy - نظام توكن سهل للعيادات',
+                'location-title': 'موقعنا',
+                'location-desc': 'بنغالور، كارناتاكا، الهند',
+                'hours-title': 'ساعات العمل',
+                'hours-desc': 'الإثنين - السبت: 9:00 صباحًا - 7:00 مساءً',
+                'form-name': 'الاسم الكامل',
+                'form-email': 'البريد الإلكتروني',
+                'form-phone': 'رقم الهاتف',
+                'form-message': 'رسالتك',
+                'form-submit': 'إرسال الرسالة',
+                'form-success': 'شكرًا لك! تم إرسال رسالتك بنجاح. سنرد عليك قريبًا.',
+                'form-name-placeholder': 'أدخل اسمك الكامل',
+                'form-email-placeholder': 'أدخل بريدك الإلكتروني',
+                'form-phone-placeholder': 'أدخل رقم هاتفك',
+                'form-message-placeholder': 'كيف يمكننا مساعدتك؟',
+                'form-clinic-name': 'اسم العيادة/المستشفى',
+                'form-clinic-name-placeholder': 'أدخل اسم العيادة/المستشفى',
+                'form-location': 'عنوان العيادة/المستشفى',
+                'form-location-placeholder': 'أدخل عنوان العيادة/المستشفى',
+                'form-specialization': 'التخصص',
+                'form-specialization-placeholder': 'أدخل تخصصك',
+                'form-mandatory': 'هذا الحقل إلزامي',
+                'form-phone-error': 'يرجى إدخال رقم هاتف صالح',
+                'form-email-error': 'يرجى إدخال بريد إلكتروني صالح (رمز # غير مسموح به)',
+                'how-to-use-title': 'كيف يعمل برنامج Tokens Boy؟',
+                'how-to-use-subtitle': 'شاهد عروضنا التوضيحية السريعة لترى مدى سهولة إدارة عيادتك وحجز المواعيد.',
+                'doctor-demo-title': 'عرض تطبيق الطبيب',
+                'doctor-demo-desc': 'تعرف على كيفية قيام الأطباء بإدارة عياداتهم، وعرض قوائم الانتظار، وتحديث حالة التوكن في الوقت الفعلي.',
+                'patient-demo-title': 'عرض تطبيق المريض',
+                'patient-demo-desc': 'شاهد مدى سهولة قيام المرضى بالبحث عن العيادات، وحجز المواعيد، وتتبع الحالة المباشرة.',
+                'subtitles-label': 'نص العرض التوضيحي:',
+                'doctor-demo-subtitles': 'مرحبًا بكم في تطبيق Tokens Boy Doctor. في هذا الفيديو، سنوضح لك كيفية إدارة جدول عيادتك اليومي، وعرض قائمة انتظار التوكن المباشرة، وتحديث حالات المرضى في الوقت الفعلي بنقرة واحدة فقط.',
+                'patient-demo-subtitles': 'جرب راحة حجز المواعيد أثناء التنقل. يوجهك هذا العرض التوضيحي خلال العثور على أفضل العيادات المحلية، والتحقق من توفر التوكن في الوقت الفعلي، وتأمين موعدك على الفور.'
             }
         };
 
@@ -530,14 +798,44 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (el.children.length === 0) {
                         el.textContent = strings[key];
                     } else {
-                        // For elements like data-i18n="about-f1" that have <strong> tags
-                        // It's safer to keep the inner HTML structure if we want to preserve <strong>
-                        // But since translations vary, let's just update the text content 
-                        // unless we want to embed HTML in translation strings.
-                        // I will simplify and just update the text for now as per user request.
                         el.innerHTML = strings[key];
                     }
                 }
+            });
+
+            // Update Elements with data-i18n-placeholder
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (strings[key]) {
+                    el.setAttribute('placeholder', strings[key]);
+                }
+            });
+
+            // Update Required Field Messages
+            document.querySelectorAll('[required]').forEach(el => {
+                el.oninvalid = function (e) {
+                    e.target.setCustomValidity("");
+                    if (!e.target.validity.valid) {
+                        if (e.target.id === 'phone' && e.target.value.length > 0 && (e.target.value.length < 7 || e.target.value.length > 15)) {
+                            e.target.setCustomValidity(strings['form-phone-error'] || 'Please enter a valid phone number');
+                        } else if (e.target.id === 'email' && e.target.value.length > 0) {
+                            e.target.setCustomValidity(strings['form-email-error'] || 'Please enter a valid email address (hash # is not allowed)');
+                        } else {
+                            e.target.setCustomValidity(strings['form-mandatory'] || 'This field is mandatory');
+                        }
+                    }
+                };
+                el.oninput = function (e) {
+                    e.target.setCustomValidity("");
+                    // Numeric filtering for phone
+                    if (e.target.id === 'phone') {
+                        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+                    }
+                    // Filtering for email (exclude #)
+                    if (e.target.id === 'email') {
+                        e.target.value = e.target.value.replace(/[#]/g, '');
+                    }
+                };
             });
 
             // Update active state in dropdown
@@ -548,6 +846,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     l.classList.remove('active');
                 }
             });
+
+            // Trigger subtitle refresh for live translation
+            window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: lang } }));
         }
 
         langBtn.addEventListener('click', (e) => {
@@ -576,6 +877,124 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.addEventListener('click', () => {
             langSwitcher.classList.remove('active');
+        });
+
+        // Initialize default language
+        updateLanguage('EN');
+    }
+
+    // --- Contact Form Handling ---
+    const contactForm = document.getElementById('contactForm');
+    const formResponse = document.getElementById('formResponseMessage');
+
+    if (contactForm && formResponse) {
+        // --- Custom Country Selector Logic ---
+        const trigger = document.getElementById('countrySelectTrigger');
+        const options = document.querySelectorAll('.custom-options .option');
+        const hiddenInput = document.getElementById('countryCode');
+        const selectedFlag = trigger.querySelector('.selected-flag');
+        const selectedCode = trigger.querySelector('.selected-code');
+        const wrapper = trigger.closest('.custom-select-wrapper');
+
+        if (trigger && options.length > 0) {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                wrapper.classList.toggle('open');
+            });
+
+            options.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    const value = option.getAttribute('data-value');
+                    const flag = option.getAttribute('data-flag');
+
+                    // Update UI
+                    selectedFlag.textContent = flag;
+                    selectedCode.textContent = value;
+                    hiddenInput.value = value;
+
+                    // Update active state
+                    options.forEach(opt => opt.classList.remove('selected'));
+                    option.classList.add('selected');
+
+                    wrapper.classList.remove('open');
+                });
+            });
+
+            // Close on click outside
+            document.addEventListener('click', () => {
+                wrapper.classList.remove('open');
+            });
+        }
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+
+            // Get form data
+            const cCode = document.getElementById('countryCode').value;
+            const phoneNumber = document.getElementById('phone').value;
+            const clinicName = document.getElementById('clinicName').value;
+            const clinicAddress = document.getElementById('location').value;
+            const specialization = document.getElementById('specialization').value;
+
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+
+                // Phone Number (Matches template {{Phone Number}})
+                'Phone Number': `${cCode} ${phoneNumber}`,
+
+                clinic_name: clinicName,
+
+                // Clinic Location (Matches template {{clinic_location}})
+                clinic_location: clinicAddress,
+
+                specialization: specialization,
+                message: document.getElementById('message').value,
+                to_name: 'Tokens Boy Support'
+            };
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+            try {
+                // Trigger both main notification and auto-reply concurrently
+                const [resultMain, resultAutoReply] = await Promise.all([
+                    emailjs.send(
+                        'service_gknrwsi',
+                        'template_wxpqj5j',
+                        templateParams
+                    ),
+                    emailjs.send(
+                        'service_gknrwsi',
+                        'template_zx0la2t', // Auto-reply template
+                        templateParams
+                    )
+                ]);
+
+                if (resultMain.status === 200) {
+                    contactForm.reset();
+                    formResponse.textContent = translations[langBtn.querySelector('span').textContent]?.['form-success'] || 'Thank you! Your message has been sent.';
+                    formResponse.className = 'form-message success';
+                } else {
+                    throw new Error('Failed to send message');
+                }
+            } catch (error) {
+                console.error('EmailJS error:', error);
+                formResponse.textContent = 'Oops! Something went wrong. Please try again later.';
+                formResponse.className = 'form-message error';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formResponse.className = 'form-message';
+                }, 5000);
+            }
         });
     }
 });
@@ -641,34 +1060,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Visibility & Styling Logic
             let opacity = 0;
-            let scale = 0.85;
-            let blur = 0;
+            let scale = 0.8; // Smaller base scale for inactive cards
             let pointerEvents = 'none';
             let zIndex = 0;
+            let border = '1px solid rgba(255, 255, 255, 0.6)'; // Default border
 
             // VISIBILITY THRESHOLDS (360/8 = 45deg steps)
-            // Center is 0. Neighbors are +/- 45. Next is +/- 90.
             if (dist < 25) {
                 // Center Front Card (Active)
                 opacity = 1;
-                scale = 1.15; // Prominent Center
-                blur = 0;
+                scale = 1.1; // Prominent Center
                 pointerEvents = 'auto';
                 zIndex = 10;
                 card.classList.add('active-card');
+                border = '1px solid #FF6B35'; // Active Glow Border
             } else if (dist < 75) {
-                // Side Neighbors (Exact Left/Right are at 45deg)
-                // NO FADE, NO BLUR requested
-                opacity = 1;
-                scale = 0.95; // Slightly smaller via scale only
-                blur = 0;
+                // Side Neighbors
+                opacity = 0.6; // Fade out neighbors
+                scale = 0.9;
                 pointerEvents = 'auto';
                 zIndex = 5;
                 card.classList.remove('active-card');
             } else {
                 // All other cards completely hidden
                 opacity = 0;
-                scale = 0.5; // Shrink hidden cards
+                scale = 0.5;
                 pointerEvents = 'none';
                 card.classList.remove('active-card');
             }
@@ -676,7 +1092,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Billboarding: Counter-rotate so card faces camera
             card.style.transform = `rotateY(${-totalAngle}deg) scale(${scale})`;
             card.style.opacity = opacity;
-            card.style.filter = blur > 0 ? `blur(${blur}px)` : 'none';
+            // REMOVED DYNAMIC BLUR FOR PERFORMANCE
+            card.style.border = border;
             card.style.pointerEvents = pointerEvents;
             wrapper.style.zIndex = zIndex;
         });
@@ -884,4 +1301,421 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     }, { passive: true });
 
+
+});
+
+// --- Live Synchronized Subtitles Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Timestamped Transcripts (Localized)
+    // Placeholder timings - User should update these with exact words/seconds
+    const videoTranscripts = {
+        'EN': {
+            'doctor': [
+                { start: 0, end: 3, text: "♪ Music ♪" },
+                { start: 3, end: 6, text: "Managing patients manually can be stressful." },
+                { start: 6, end: 10, text: "Long queues, constant interruptions, and time loss." },
+                { start: 10, end: 13, text: "Tokens Boy helps doctors manage clinic flow digitally." },
+                { start: 13, end: 20, text: "From the app, the clinic can create and control tokens or appointments in real time." },
+                { start: 20, end: 25, text: "You can see the full queue, call the next patient, and manage delays easily." },
+                { start: 25, end: 31, text: "This means fewer interruptions, better consultation time, and a calm, organized clinic." },
+                { start: 31, end: 36, text: "Tokens Boy gives doctors full control of your clinic workflow." },
+                { start: 36, end: 40, text: "♪ Music ♪" }
+            ],
+            'patient': [
+                { start: 0, end: 3, text: "♪ Music ♪" },
+                { start: 3, end: 7, text: "Experience seamless healthcare at your fingertips." },
+                { start: 7, end: 14, text: "With Tokens Boy patient app, easily book appointments for yourself or your loved ones in just a few taps." },
+                { start: 14, end: 16, text: "Need to make a change?" },
+                { start: 16, end: 20, text: "Reschedule your slot in advance without any hassle." },
+                { start: 20, end: 24, text: "Stay informed with real-time notifications directly from your doctor." },
+                { start: 24, end: 30, text: "Smarter appointments, smoother care, with Tokens Boy." },
+                { start: 30, end: 34, text: "♪ Music ♪" }
+            ]
+        },
+        'KN': {
+            'doctor': [
+                { start: 0, end: 3, text: "♪ ಸಂಗೀತ ♪" },
+                { start: 3, end: 6, text: "ರೋಗಿಗಳನ್ನು ಕೈಯಾರೆ ನಿರ್ವಹಿಸುವುದು ಒತ್ತಡದಿಂದ ಕೂಡಿದೆ." },
+                { start: 6, end: 10, text: "ಉದ್ದನೆಯ ಸರತಿ ಸಾಲುಗಳು, ನಿರಂತರ ಅಡಚಣೆಗಳು ಮತ್ತು ಸಮಯದ ನಷ್ಟ." },
+                { start: 10, end: 13, text: "ಟೋಕನ್ಸ್ ಬಾಯ್ ವೈದ್ಯರಿಗೆ ಕ್ಲಿನಿಕ್ ಹರಿವನ್ನು ಡಿಜಿಟಲ್ ರೂಪದಲ್ಲಿ ನಿರ್ವಹಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ." },
+                { start: 13, end: 20, text: " ಆ್ಯಪ್‌ನಿಂದ, ಕ್ಲಿನಿಕ್ ನೈಜ ಸಮಯದಲ್ಲಿ ಟೋಕನ್‌ಗಳು ಅಥವಾ ನೇಮಕಾತಿಗಳನ್ನು ರಚಿಸಬಹುದು ಮತ್ತು ನಿಯಂತ್ರಿಸಬಹುದು." },
+                { start: 20, end: 25, text: "ನೀವು ಸಂಪೂರ್ಣ ಸರದಿಯನ್ನು ನೋಡಬಹುದು, ಮುಂದಿನ ರೋಗಿಯನ್ನು ಕರೆಯಬಹುದು ಮತ್ತು ವಿಳಂಬಗಳನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಬಹುದು." },
+                { start: 25, end: 31, text: "ಇದರರ್ಥ ಕಡಿಮೆ ಅಡಚಣೆಗಳು, ಉತ್ತಮ ಸಮಾಲೋಚನೆ ಸಮಯ ಮತ್ತು ಶಾಂತ, ಸಂಘಟಿತ ಕ್ಲಿನಿಕ್." },
+                { start: 31, end: 36, text: "ಟೋಕನ್ಸ್ ಬಾಯ್ ವೈದ್ಯರಿಗೆ ನಿಮ್ಮ ಕ್ಲಿನಿಕ್ ಕೆಲಸದ ಹರಿವಿನ ಮೇಲೆ ಸಂಪೂರ್ಣ ನಿಯಂತ್ರಣವನ್ನು ನೀಡುತ್ತದೆ." },
+                { start: 36, end: 40, text: "♪ ಸಂಗೀತ ♪" }
+            ],
+            'patient': [
+                { start: 0, end: 3, text: "♪ ಸಂಗೀತ ♪" },
+                { start: 3, end: 7, text: "ನಿಮ್ಮ ಬೆರಳ ತುದಿಯಲ್ಲಿ ತಡೆರಹಿತ ಆರೋಗ್ಯ ಸೇವೆಯನ್ನು ಅನುಭವಿಸಿ." },
+                { start: 7, end: 14, text: "ಟೋಕನ್ಸ್ ಬಾಯ್ ಪೇಷಂಟ್ ಆ್ಯಪ್‌ನೊಂದಿಗೆ, ಕೇವಲ ಕೆಲವು ಟ್ಯಾಪ್‌ಗಳಲ್ಲಿ ನಿಮಗಾಗಿ ಅಥವಾ ನಿಮ್ಮ ಪ್ರೀತಿಪಾತ್ರರಿಗೆ ನೇಮಕಾತಿಗಳನ್ನು ಸುಲಭವಾಗಿ ಬುಕ್ ಮಾಡಿ." },
+                { start: 14, end: 16, text: "ಬದಲಾವಣೆ ಮಾಡಬೇಕೆ?" },
+                { start: 16, end: 20, text: "ಯಾವುದೇ ತೊಂದರೆಯಿಲ್ಲದೆ ನಿಮ್ಮ ಸ್ಲಾಟ್ ಅನ್ನು ಮುಂಚಿತವಾಗಿ ಮರುಹೊಂದಿಸಿ." },
+                { start: 20, end: 23, text: "ನಿಮ್ಮ ವೈದ್ಯರಿಂದ ನೇರವಾಗಿ ನೈಜ-ಸಮಯದ ಅಧಿಸೂಚನೆಗಳೊಂದಿಗೆ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಿರಿ." },
+                { start: 23, end: 28, text: "ಟೋಕನ್ಸ್ ಬಾಯ್‌ನೊಂದಿಗೆ ಸ್ಮಾರ್ಟರ್ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್‌ಗಳು, ಸುಗಮ ಆರೈಕೆ." },
+                { start: 29, end: 34, text: "♪ ಸಂಗೀತ ♪" }
+            ]
+        },
+        'ES': {
+            'doctor': [
+                { start: 0, end: 3, text: "♪ Música ♪" },
+                { start: 3, end: 6, text: "Administrar pacientes manualmente puede ser estresante." },
+                { start: 6, end: 10, text: "Largas colas, constantes interrupciones y pérdida de tiempo." },
+                { start: 10, end: 13, text: "Tokens Boy ayuda a los médicos a gestionar el flujo de la clínica digitalmente." },
+                { start: 13, end: 20, text: "Desde la aplicación, la clínica puede crear y controlar turnos o citas en tiempo real." },
+                { start: 20, end: 25, text: "Puede ver la cola completa, llamar al siguiente paciente y gestionar retrasos fácilmente." },
+                { start: 25, end: 31, text: "Esto significa menos interrupciones, mejor tiempo de consulta y una clínica tranquila y organizada." },
+                { start: 31, end: 36, text: "Tokens Boy ofrece a los médicos el control total de su flujo de trabajo clínico." },
+                { start: 36, end: 40, text: "♪ Música ♪" }
+            ],
+            'patient': [
+                { start: 0, end: 3, text: "♪ Música ♪" },
+                { start: 3, end: 7, text: "Experimente una atención médica perfecta al alcance de su mano." },
+                { start: 7, end: 14, text: "Con la aplicación para pacientes Tokens Boy, reserve citas fácilmente para usted o sus seres queridos en solo unos pocos toques." },
+                { start: 14, end: 16, text: "¿Necesita hacer un cambio?" },
+                { start: 16, end: 20, text: "Reprograme su turno con anticipación sin problemas." },
+                { start: 20, end: 24, text: "Manténgase informado con notificaciones en tiempo real directamente de su médico." },
+                { start: 24, end: 30, text: "Citas más inteligentes, atención más fluida con Tokens Boy." },
+                { start: 30, end: 34, text: "♪ Música ♪" }
+            ]
+        },
+        'FR': {
+            'doctor': [
+                { start: 0, end: 3, text: "♪ Musique ♪" },
+                { start: 3, end: 6, text: "Gérer les patients manuellement peut être stressant." },
+                { start: 6, end: 10, text: "Longues files d'attente, interruptions constantes et perte de temps." },
+                { start: 10, end: 13, text: "Tokens Boy aide les médecins à gérer le flux de la clinique de manière numérique." },
+                { start: 13, end: 20, text: "Depuis l'application, la clinique peut créer et contrôler des jetons ou des rendez-vous en temps réel." },
+                { start: 20, end: 25, text: "Vous pouvez voir la file d'attente complète, appeler le patient suivant et gérer facilement les retards." },
+                { start: 25, end: 31, text: "Cela signifie moins d'interruptions, un meilleur temps de consultation et une clinique calme et organisée." },
+                { start: 31, end: 36, text: "Tokens Boy donne aux médecins le plein contrôle de leur flux de travail clinique." },
+                { start: 36, end: 40, text: "♪ Musique ♪" }
+            ],
+            'patient': [
+                { start: 0, end: 3, text: "♪ Musique ♪" },
+                { start: 3, end: 7, text: "Bénéficiez de soins de santé fluides à portée de main." },
+                { start: 7, end: 14, text: "Avec l'application Patient Tokens Boy, prenez facilement rendez-vous pour vous ou vos proches en quelques gestes." },
+                { start: 14, end: 16, text: "Besoin de faire un changement ?" },
+                { start: 16, end: 20, text: "Reprogrammez votre créneau à l'avance sans tracas." },
+                { start: 20, end: 24, text: "Restez informé grâce aux notifications en temps réel directement de votre médecin." },
+                { start: 24, end: 30, text: "Des rendez-vous plus intelligents, des soins plus fluides avec Tokens Boy." },
+                { start: 30, end: 34, text: "♪ Musique ♪" }
+            ]
+        },
+        'DE': {
+            'doctor': [
+                { start: 0, end: 3, text: "♪ Musik ♪" },
+                { start: 3, end: 6, text: "Die manuelle Patientenverwaltung kann stressig sein." },
+                { start: 6, end: 10, text: "Lange Warteschlangen, ständige Unterbrechungen und Zeitverlust." },
+                { start: 10, end: 13, text: "Tokens Boy hilft Ärzten, den Klinikablauf digital zu verwalten." },
+                { start: 13, end: 20, text: "Über die App kann die Klinik Tokens oder Termine in Echtzeit erstellen und steuern." },
+                { start: 20, end: 25, text: "Sie können die gesamte Warteschlange einsehen, den nächsten Patienten aufrufen und Verzögerungen einfach verwalten." },
+                { start: 25, end: 31, text: "Das bedeutet weniger Unterbrechungen, mehr Beratungszeit und eine ruhige, organisierte Klinik." },
+                { start: 31, end: 36, text: "Tokens Boy gibt Ärzten die volle Kontrolle über ihren Klinik-Arbeitsablauf." },
+                { start: 36, end: 40, text: "♪ Musik ♪" }
+            ],
+            'patient': [
+                { start: 0, end: 3, text: "♪ Musik ♪" },
+                { start: 3, end: 7, text: "Erleben Sie eine nahtlose Gesundheitsversorgung auf Knopfdruck." },
+                { start: 7, end: 14, text: "Mit der Tokens Boy Patienten-App können Sie mit nur wenigen Klicks Termine für sich selbst oder Ihre Angehörigen buchen." },
+                { start: 14, end: 16, text: "Müssen Sie etwas ändern ?" },
+                { start: 16, end: 20, text: "Verschieben Sie Ihren Termin im Voraus ohne Probleme." },
+                { start: 20, end: 24, text: "Bleiben Sie mit Echtzeit-Benachrichtigungen direkt von Ihrem Arzt auf dem Laufenden." },
+                { start: 24, end: 30, text: "Intelligentere Termine, reibungslosere Versorgung mit Tokens Boy." },
+                { start: 30, end: 34, text: "♪ Musik ♪" }
+            ]
+        },
+        'IT': {
+            'doctor': [
+                { start: 0, end: 3, text: "♪ Musica ♪" },
+                { start: 3, end: 6, text: "Gestire i pazienti manualmente può essere stressante." },
+                { start: 6, end: 10, text: "Lunghe code, costanti interruzioni e perdita di tempo." },
+                { start: 10, end: 13, text: "Tokens Boy aiuta i medici a gestire digitalmente il fluxo della clinica." },
+                { start: 13, end: 20, text: "Dall'app, la clinica può creare e controllare token o appuntamenti in tempo reale." },
+                { start: 20, end: 25, text: "È possibile vedere l'intera coda, chiamare il prossimo paziente e gestire facilmente i ritardi." },
+                { start: 25, end: 31, text: "Questo significa meno interruzioni, migliori tempi di consultazione e una clinica calma e organizzata." },
+                { start: 31, end: 36, text: "Tokens Boy offre ai medici il pieno controllo sul flusso di lavoro della loro clinica." },
+                { start: 36, end: 40, text: "♪ Musica ♪" }
+            ],
+            'patient': [
+                { start: 0, end: 3, text: "♪ Musica ♪" },
+                { start: 3, end: 7, text: "Sperimentate un'assistenza sanitaria senza intoppi a portata di mano." },
+                { start: 7, end: 14, text: "Con l'App Paziente Tokens Boy, prenotate facilmente appuntamenti per voi o per i vostri cari in pochi tocchi." },
+                { start: 14, end: 16, text: "Dovete apportare una modifica ?" },
+                { start: 16, end: 20, text: "Riprogrammate il vostro slot in anticipo senza problemi." },
+                { start: 20, end: 24, text: "Rimanete informati con notifiche in tempo reale direttamente dal vostro medico." },
+                { start: 24, end: 30, text: "Appuntamenti più intelligenti, cure più fluide con Tokens Boy." },
+                { start: 30, end: 34, text: "♪ Musica ♪" }
+            ]
+        },
+        'PT': {
+            'doctor': [
+                { start: 0, end: 3, text: "♪ Música ♪" },
+                { start: 3, end: 6, text: "Gerenciar pacientes manualmente pode ser estressante." },
+                { start: 6, end: 10, text: "Longas filas, interrupções constantes e perda de tempo." },
+                { start: 10, end: 13, text: "Tokens Boy ajuda os médicos a gerenciar o fluxo da clínica digitalmente." },
+                { start: 13, end: 20, text: "A partir do aplicativo, a clínica pode criar e controlar tokens ou consultas em tempo real." },
+                { start: 20, end: 25, text: "Você pode ver a fila completa, chamar o próximo paciente e gerenciar atrasos facilmente." },
+                { start: 25, end: 31, text: "Isso significa menos interrupções, melhor tempo de consulta e uma clínica calma e organizada." },
+                { start: 31, end: 36, text: "Tokens Boy dá aos médicos controle total sobre o fluxo de trabalho da clínica." },
+                { start: 36, end: 40, text: "♪ Música ♪" }
+            ],
+            'patient': [
+                { start: 0, end: 3, text: "♪ Música ♪" },
+                { start: 3, end: 7, text: "Experimente cuidados de saúde integrados ao seu alcance." },
+                { start: 7, end: 14, text: "Com o aplicativo do paciente Tokens Boy, agende consultas facilmente para você ou seus entes queridos em apenas alguns toques." },
+                { start: 14, end: 16, text: "Precisa fazer uma alteração?" },
+                { start: 16, end: 20, text: "Reagende sua vaga com antecedência, sem complicações." },
+                { start: 20, end: 24, text: "Mantenha-se informado com notificações em tempo real diretamente do seu médico." },
+                { start: 24, end: 30, text: "Consultas mais inteligentes, atendimento mais tranquilo com Tokens Boy." },
+                { start: 30, end: 34, text: "♪ Música ♪" }
+            ]
+        },
+        'AR': {
+            'doctor': [
+                { start: 0, end: 3, text: "♪ موسيقى ♪" },
+                { start: 3, end: 6, text: "يمكن أن تكون إدارة المرضى يدويًا أمرًا مرهقًا." },
+                { start: 6, end: 10, text: "طوابير طويلة، وانقطاعات مستمرة، وضياع للوقت." },
+                { start: 10, end: 13, text: "يساعد Tokens Boy الأطباء على إدارة تدفق العيادة رقميًا." },
+                { start: 13, end: 20, text: "من التطبيق، يمكن للعيادة إنشاء والتحكم في التوكنات أو المواعيد في الوقت الفعلي." },
+                { start: 20, end: 25, text: "يمكنك رؤية قائمة الانتظار الكاملة، والاتصال بالمريض التالي، وإدارة التأخيرات بسهولة." },
+                { start: 25, end: 31, text: "هذا يعني انقطاعات أقل، ووقت استشارة أفضل، وعيادة هادئة ومنظمة." },
+                { start: 31, end: 36, text: "يمنحه Tokens Boy الأطباء سيطرة كاملة على سير عمل عيادتك." },
+                { start: 36, end: 40, text: "♪ موسيقى ♪" }
+            ],
+            'patient': [
+                { start: 0, end: 3, text: "♪ موسيقى ♪" },
+                { start: 3, end: 7, text: "اختبر رعاية صحية سلسة في متناول يدك." },
+                { start: 7, end: 14, text: "باستخدام تطبيق مريض Tokens Boy، يمكنك حجز المواعيد بسهولة لنفسك أو لأحبائك في بضع نقرات فقط." },
+                { start: 14, end: 16, text: "هل تحتاج إلى إجراء تغيير؟" },
+                { start: 16, end: 20, text: "قم بتغيير موعدك مسبقًا دون أي عناء." },
+                { start: 20, end: 24, text: "ابق على اطلاع مع إشعارات في الوقت الفعلي مباشرة من طبيبك." },
+                { start: 24, end: 30, text: "مواعيد أكثر ذكاءً، ورعاية أكثر سلاسة مع Tokens Boy." },
+                { start: 30, end: 34, text: "♪ موسيقى ♪" }
+            ]
+        }
+    };
+
+    // Kannada Audio Assets
+    const kannadaAudios = {
+        'doctor': 'assets/audio kannada doctor.mp3',
+        'patient': 'assets/audio kannada patient.mp3'
+    };
+
+    // Helper to aggregate all subtitles up to current time with word-by-word reveal
+    function getAccumulatedSubtitles(currentTime, transcriptList) {
+        if (!transcriptList) return "";
+
+        let result = "";
+        for (let i = 0; i < transcriptList.length; i++) {
+            const item = transcriptList[i];
+
+            if (currentTime >= item.start) {
+                if (currentTime >= item.end) {
+                    // Full sentence already spoken
+                    result += item.text + " ";
+                } else {
+                    // Current active sentence - calculate word reveal
+                    const words = item.text.split(" ");
+                    const duration = item.end - item.start;
+                    const elapsed = currentTime - item.start;
+                    const wordCount = Math.floor((elapsed / duration) * words.length);
+
+                    const visibleWords = words.slice(0, Math.max(1, wordCount)).join(" ");
+                    result += visibleWords + " ";
+                    break; // Stop at the active scrolling line
+                }
+            } else {
+                break; // Sentence hasn't started yet
+            }
+        }
+        return result.trim();
+    }
+
+    // Main sync function with Dual-Engine Audio support
+    function initVideoSync(videoId, subtitleId, demoKey) {
+        const video = document.getElementById(videoId);
+        const subtitleBox = document.getElementById(subtitleId);
+
+        if (!video || !subtitleBox) return;
+
+        // Initialize Kannada Audio engine
+        const knAudio = new Audio(kannadaAudios[demoKey]);
+        knAudio.preload = "auto";
+
+        const refreshSubtitles = () => {
+            const currentLang = document.querySelector('.lang-btn span')?.textContent || 'EN';
+
+            // Audio/Video Muting & Sync Logic
+            if (currentLang === 'KN') {
+                video.muted = true;
+                if (!video.paused && !video.ended) {
+                    if (knAudio.paused) knAudio.play().catch(() => { });
+                }
+
+                // Sync playback rates to minimize drift
+                if (knAudio.playbackRate !== video.playbackRate) {
+                    knAudio.playbackRate = video.playbackRate;
+                }
+
+                // Keep audio time in sync with video (Relaxed threshold: 0.5s)
+                // Only seek if drift is significant to avoid stuttering/repeating words
+                if (Math.abs(knAudio.currentTime - video.currentTime) > 0.5) {
+                    knAudio.currentTime = video.currentTime;
+                }
+            } else {
+                video.muted = false;
+                if (!knAudio.paused) knAudio.pause();
+            }
+
+            const scripts = videoTranscripts[currentLang] || videoTranscripts['EN'];
+            const demoScript = scripts[demoKey];
+
+            const accumulatedText = getAccumulatedSubtitles(video.currentTime, demoScript);
+
+            if (subtitleBox.innerText !== accumulatedText) {
+                subtitleBox.innerText = accumulatedText || "";
+                subtitleBox.scrollTop = subtitleBox.scrollHeight;
+            }
+        };
+
+        // Event Listeners for seamless sync
+        video.addEventListener('timeupdate', refreshSubtitles);
+        video.addEventListener('seeked', () => {
+            knAudio.currentTime = video.currentTime;
+            refreshSubtitles();
+        });
+
+        video.addEventListener('play', () => {
+            const currentLang = document.querySelector('.lang-btn span')?.textContent || 'EN';
+            if (currentLang === 'KN') knAudio.play().catch(() => { });
+        });
+
+        video.addEventListener('pause', () => {
+            knAudio.pause();
+        });
+
+        // Global refresh on language change
+        window.addEventListener('languageChanged', () => {
+            refreshSubtitles();
+            if (document.querySelector('.lang-btn span')?.textContent !== 'KN') {
+                knAudio.pause();
+            }
+        });
+    }
+
+    // Initialize synchronization for both videos
+    initVideoSync('video-doctor', 'subtitles-doctor', 'doctor');
+    initVideoSync('video-patient', 'subtitles-patient', 'patient');
+
+    // --- Carousel Logic ---
+    const track = document.querySelector('.carousel-track');
+    const items = Array.from(document.querySelectorAll('.carousel-item'));
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    const dots = Array.from(document.querySelectorAll('.nav-dot'));
+
+    let currentIndex = 0;
+    let startX = 0;
+    let isDragging = false;
+
+    // Function to update slide position
+    const updateSlide = (index) => {
+        if (index < 0) index = 0;
+        if (index >= items.length) index = items.length - 1;
+
+        currentIndex = index;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Update items (for 3D focus effect)
+        items.forEach((item, idx) => {
+            item.classList.toggle('active', idx === currentIndex);
+        });
+
+        // Update dots
+        dots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === currentIndex);
+        });
+
+        // Pause other videos when switching
+        items.forEach((item, idx) => {
+            const video = item.querySelector('video');
+            if (idx !== currentIndex && video) {
+                video.pause();
+            }
+        });
+    };
+
+    // Initialize first slide as active
+    updateSlide(0);
+
+    // Button click listeners
+    nextBtn?.addEventListener('click', () => {
+        if (currentIndex < items.length - 1) {
+            updateSlide(currentIndex + 1);
+        }
+    });
+
+    prevBtn?.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            updateSlide(currentIndex - 1);
+        }
+    });
+
+    // Dot click listeners
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => updateSlide(index));
+    });
+
+    // --- Touch Support for Swipe ---
+    track?.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+    });
+
+    track?.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const currentX = e.touches[0].clientX;
+        const diff = startX - currentX;
+
+        // If horizontal movement is significant, prevent scrolling
+        if (Math.abs(diff) > 10) {
+            // e.preventDefault(); // Might cause issues with page scroll
+        }
+    });
+
+    track?.addEventListener('touchend', (e) => {
+        if (!isDragging) return;
+        const endX = e.changedTouches[0].clientX;
+        const diff = startX - endX;
+
+        // Threshold for swipe (50px)
+        if (diff > 50) {
+            // Swipe Left -> Next
+            if (currentIndex < items.length - 1) updateSlide(currentIndex + 1);
+        } else if (diff < -50) {
+            // Swipe Right -> Prev
+            if (currentIndex > 0) updateSlide(currentIndex - 1);
+        }
+
+        isDragging = false;
+    });
+
+    // --- Mouse Drag Support (Optional but professional) ---
+    track?.addEventListener('mousedown', (e) => {
+        startX = e.clientX;
+        isDragging = true;
+    });
+
+    window.addEventListener('mouseup', (e) => {
+        if (!isDragging) return;
+        const endX = e.clientX;
+        const diff = startX - endX;
+
+        if (diff > 100) {
+            if (currentIndex < items.length - 1) updateSlide(currentIndex + 1);
+        } else if (diff < -100) {
+            if (currentIndex > 0) updateSlide(currentIndex - 1);
+        }
+        isDragging = false;
+    });
 });

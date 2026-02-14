@@ -23,6 +23,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+<<<<<<< Updated upstream
+=======
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "s4cBsGEXMIaqMsBL1",
+            });
+        })();
+    </script>
+>>>>>>> Stashed changes
 </head>
 
 <body>
@@ -93,14 +109,18 @@
                 <div class="thought-bubble t5">Booked!</div>
                 <div class="thought-bubble t6">So Easy!</div>
             </div>
-        </div>
+            <!-- Background Logo Layer -->
+            <div class="hero-bg-logo">
+                <img src="assets/logo_without_background.png" alt="Tokens Boy Watermark" class="hero-watermark">
+            </div>
+        </div><!-- End hero-bg-story -->
 
         <div class="container hero-container">
             <div class="hero-content">
 
                 <h1 data-i18n="hero-title">Tokens Boy</h1>
                 <p class="hero-subtitle" data-i18n="hero-subtitle">Easy Tokens for Indian Clinics</p>
-                <p class="hero-description" style="margin-top: 50px; color: #ffffff !important;" data-i18n="hero-desc">A
+                <p class="hero-description" style="color: #ffffff !important;" data-i18n="hero-desc">A
                     streamlined,
                     digitized queue and scheduling
                     system designed for modern
@@ -111,9 +131,6 @@
                     <a href="#about" class="btn btn-secondary" data-i18n="learn-more">Learn More</a>
                 </div>
 
-            </div>
-            <div class="hero-image">
-                <img src="assets/hero-logo.png?v=101" alt="Tokens Boy">
             </div>
         </div>
     </section>
@@ -391,26 +408,257 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact reveal-on-scroll">
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="how-to-use reveal-on-scroll">
+        <!-- Background Decorations -->
+        <div class="how-to-use-bg">
+            <div class="bg-blob blob-1"></div>
+            <div class="bg-blob blob-2"></div>
+            <div class="bg-blob blob-3"></div>
+        </div>
         <div class="container">
             <div class="section-header">
-                <h2 data-i18n="contact-title">Contact Us</h2>
-                <span class="section-tag" data-i18n="contact-tag">Get In Touch</span>
-                <p data-i18n="contact-desc">We're here to help transform your clinic's patient management.</p>
+                <h2 data-i18n="how-to-use-title">How does Tokens Boy work?</h2>
+                <p data-i18n="how-to-use-subtitle">Watch our quick demonstrations to see how easy it is to manage your
+                    clinic and book appointments.</p>
             </div>
-            <div class="contact-grid">
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous Demo">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next-btn" aria-label="Next Demo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
 
-                <div class="contact-card">
-                    <i class="fas fa-phone-alt"></i>
-                    <h3 data-i18n="phone-title">Phone Numbers</h3>
-                    <p data-i18n="phone-desc">General: <a href="https://wa.me/917996078472" target="_blank"
-                            style="color: inherit; text-decoration: none;">+917996078472</a></p>
+                <div class="carousel-track">
+                    <!-- Doctor Demo -->
+                    <div class="video-card carousel-item">
+                        <div class="video-content">
+                            <div class="video-wrapper-inner">
+                                <video id="video-doctor" controls controlsList="nodownload noplaybackrate"
+                                    disablePictureInPicture oncontextmenu="return false;" poster="assets/hero-logo.png">
+                                    <source src="assets/Doctor App Demo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h3 data-i18n="doctor-demo-title">For Doctors,</h3>
+                                <p data-i18n="doctor-demo-desc">Learn how doctors can manage their clinic, view queues,
+                                    and update token status in real-time.</p>
+                            </div>
+                            <div class="video-subtitles">
+                                <h4 data-i18n="subtitles-label">Demonstration Script:</h4>
+                                <div id="subtitles-doctor" class="subtitle-box">
+                                    [Doctor App Voice Transcript Placeholders]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Patient Demo -->
+                    <div class="video-card carousel-item">
+                        <div class="video-content">
+                            <div class="video-wrapper-inner">
+                                <video id="video-patient" controls controlsList="nodownload noplaybackrate"
+                                    disablePictureInPicture oncontextmenu="return false;" poster="assets/hero-logo.png">
+                                    <source src="assets/Patient App Demo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="video-info">
+                                <h3 data-i18n="patient-demo-title">For Patients,</h3>
+                                <p data-i18n="patient-demo-desc">See how easy it is for patients to search for clinics,
+                                    book slots, and track live status.</p>
+                            </div>
+                            <div class="video-subtitles">
+                                <h4 data-i18n="subtitles-label">Demonstration Script:</h4>
+                                <div id="subtitles-patient" class="subtitle-box">
+                                    [Patient App Voice Transcript Placeholders]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3 data-i18n="email-title">Email Address</h3>
-                    <p data-i18n="email-desc">support@tokensboy.com</p>
+
+                <div class="carousel-nav">
+                    <span class="nav-dot active" data-index="0"></span>
+                    <span class="nav-dot" data-index="1"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal-on-scroll">
+        <div class="contact-bg-elements">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-token token-1"></div>
+            <div class="bg-token token-2"></div>
+            <div class="bg-token token-3"></div>
+        </div>
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info Column -->
+                <div class="contact-info">
+                    <div class="section-header">
+                        <h2 data-i18n="contact-title">Contact Us</h2>
+                        <span class="section-tag" data-i18n="contact-tag">Get In Touch</span>
+                        <p data-i18n="contact-desc">We're here to help transform your clinic's patient management.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="contact-form-container">
+                    <div id="formResponseMessage" class="form-message"></div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><span data-i18n="form-name">Full Name</span> <span
+                                        class="required-star">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="name" name="name"
+                                        data-i18n-placeholder="form-name-placeholder" placeholder="Enter your name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><span data-i18n="form-email">Email Address</span> <span
+                                        class="required-star">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email"
+                                        data-i18n-placeholder="form-email-placeholder" placeholder="Enter your email"
+                                        pattern="[^#\s@]+@[^#\s@]+\.[^#\s@]+" required
+                                        title="Please enter a valid email address (hash # is not allowed)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><span data-i18n="form-phone">Phone Number</span> <span
+                                        class="required-star">*</span></label>
+                                <div class="input-with-icon phone-input-group">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div class="custom-select-wrapper">
+                                        <div class="custom-select-trigger" id="countrySelectTrigger">
+                                            <span class="selected-flag">🇮🇳</span>
+                                            <span class="selected-code">+91</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="custom-options" id="countryOptions">
+                                            <div class="option selected" data-value="+91" data-flag="🇮🇳">
+                                                <span class="option-flag">🇮🇳</span>
+                                                <span class="option-name">India</span>
+                                                <span class="option-code">+91</span>
+                                            </div>
+                                            <div class="option" data-value="+1" data-flag="🇺🇸">
+                                                <span class="option-flag">🇺🇸</span>
+                                                <span class="option-name">USA</span>
+                                                <span class="option-code">+1</span>
+                                            </div>
+                                            <div class="option" data-value="+44" data-flag="🇬🇧">
+                                                <span class="option-flag">🇬🇧</span>
+                                                <span class="option-name">UK</span>
+                                                <span class="option-code">+44</span>
+                                            </div>
+                                            <div class="option" data-value="+971" data-flag="🇦🇪">
+                                                <span class="option-flag">🇦🇪</span>
+                                                <span class="option-name">UAE</span>
+                                                <span class="option-code">+971</span>
+                                            </div>
+                                            <div class="option" data-value="+61" data-flag="🇦🇺">
+                                                <span class="option-flag">🇦🇺</span>
+                                                <span class="option-name">Australia</span>
+                                                <span class="option-code">+61</span>
+                                            </div>
+                                            <div class="option" data-value="+65" data-flag="🇸🇬">
+                                                <span class="option-flag">🇸🇬</span>
+                                                <span class="option-name">Singapore</span>
+                                                <span class="option-code">+65</span>
+                                            </div>
+                                            <div class="option" data-value="+86" data-flag="🇨🇳">
+                                                <span class="option-flag">🇨🇳</span>
+                                                <span class="option-name">China</span>
+                                                <span class="option-code">+86</span>
+                                            </div>
+                                            <div class="option" data-value="+81" data-flag="🇯🇵">
+                                                <span class="option-flag">🇯🇵</span>
+                                                <span class="option-name">Japan</span>
+                                                <span class="option-code">+81</span>
+                                            </div>
+                                            <div class="option" data-value="+966" data-flag="🇸🇦">
+                                                <span class="option-flag">🇸🇦</span>
+                                                <span class="option-name">Saudi Arabia</span>
+                                                <span class="option-code">+966</span>
+                                            </div>
+                                            <div class="option" data-value="+49" data-flag="🇩🇪">
+                                                <span class="option-flag">🇩🇪</span>
+                                                <span class="option-name">Germany</span>
+                                                <span class="option-code">+49</span>
+                                            </div>
+                                            <div class="option" data-value="+33" data-flag="🇫🇷">
+                                                <span class="option-flag">🇫🇷</span>
+                                                <span class="option-name">France</span>
+                                                <span class="option-code">+33</span>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="countryCode" name="countryCode" value="+91">
+                                    </div>
+                                    <input type="tel" id="phone" name="phone"
+                                        data-i18n-placeholder="form-phone-placeholder"
+                                        placeholder="Enter your phone number" maxlength="15" pattern="[0-9]{7,15}"
+                                        inputmode="numeric" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="clinicName"><span data-i18n="form-clinic-name">Clinic/Hospital Name</span>
+                                    <span class="required-star">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-building"></i>
+                                    <input type="text" id="clinicName" name="clinicName"
+                                        data-i18n-placeholder="form-clinic-name-placeholder"
+                                        placeholder="Enter clinic/hospital name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="location"><span data-i18n="form-location">Clinic/Hospital Address</span>
+                                    <span class="required-star">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-hospital"></i>
+                                    <input type="text" id="location" name="location"
+                                        data-i18n-placeholder="form-location-placeholder"
+                                        placeholder="Enter clinic/hospital address" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="specialization"><span data-i18n="form-specialization">Specialization</span>
+                                    <span class="required-star">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                    <input type="text" id="specialization" name="specialization"
+                                        data-i18n-placeholder="form-specialization-placeholder"
+                                        placeholder="Enter your specialization" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><span data-i18n="form-message">Your Message</span> <span
+                                    class="required-star">*</span></label>
+                            <div class="input-with-icon textarea-icon">
+                                <i class="fas fa-comment-dots"></i>
+                                <textarea id="message" name="message" rows="3"
+                                    data-i18n-placeholder="form-message-placeholder" placeholder="How can we help you?"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn gradient-btn">
+                            <span data-i18n="form-submit">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -420,7 +668,7 @@
     <footer>
         <div class="container footer-container">
             <div class="footer-col">
-                <div class="footer-logo" style="margin-top: -80px; display: flex; justify-content: center;">
+                <div class="footer-logo">
                     <img src="assets/footer-logo.png" alt="Tokens Boy Logo" class="footer-logo-img">
                 </div>
                 <div class="footer-social">
@@ -439,6 +687,17 @@
                     <a href="https://www.youtube.com/@tokensboy" target="_blank" rel="noopener noreferrer"
                         aria-label="YouTube">
                         <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/TokensBoy" target="_blank" rel="noopener noreferrer"
+                        aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.threads.com/@tokensboy" target="_blank" rel="noopener noreferrer"
+                        aria-label="Threads">
+                        <i class="fab fa-threads"></i>
+                    </a>
+                    <a href="https://pin.it/3g1pdb7Ii" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                        <i class="fab fa-pinterest-p"></i>
                     </a>
                 </div>
             </div>
@@ -470,7 +729,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Tokens Boy. All rights reserved. | Easy Tokens for Indian Clinics
+            <p>&copy; 2026 Tokens Boy. All rights reserved. | Easy Tokens for Indian Clinics
             </p>
         </div>
     </footer>
