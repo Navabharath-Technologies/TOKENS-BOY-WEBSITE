@@ -2499,12 +2499,13 @@ footer {
 .problem-card .icon {
     width: 80px;
     height: 80px;
+    aspect-ratio: 1 / 1;
     border-radius: 20px;
     background: linear-gradient(135deg, #FF512F 0%, #F7931E 50%, #FFBB00 100%);
-    background-size: 200% 200%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
     font-size: 32px;
     color: white;
     margin-bottom: 24px;
@@ -2514,10 +2515,16 @@ footer {
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 5;
-    transform: translateZ(30px);
+    transform: translateZ(15px);
     will-change: transform;
-    animation: iconFloat 3s ease-in-out infinite, gradientShift 6s ease infinite;
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.problem-card .icon i {
+    display: block;
+    line-height: 1;
+    transform: translateZ(1px);
+    /* Ensure icon font stays above container 3D layer */
 }
 
 /* Icon Glow Ring */
@@ -2542,30 +2549,6 @@ footer {
     animation: pulseRing 2s ease-in-out infinite;
 }
 
-@keyframes iconFloat {
-
-    0%,
-    100% {
-        transform: translateZ(30px) translateY(0px) rotate(0deg);
-    }
-
-    50% {
-        transform: translateZ(30px) translateY(-8px) rotate(5deg);
-    }
-}
-
-@keyframes gradientShift {
-
-    0%,
-    100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-}
-
 @keyframes pulseRing {
 
     0%,
@@ -2581,7 +2564,7 @@ footer {
 }
 
 .problem-card.active-card .icon {
-    transform: scale(1.15);
+    transform: translateZ(15px) scale(1.15);
     box-shadow:
         0 15px 40px rgba(247, 147, 30, 0.6),
         0 0 35px rgba(255, 81, 47, 0.4),
@@ -2589,7 +2572,7 @@ footer {
 }
 
 .problem-card:hover .icon {
-    transform: scale(1.2) rotate(8deg);
+    transform: translateZ(15px) scale(1.2) rotate(8deg);
     box-shadow:
         0 18px 50px rgba(247, 147, 30, 0.7),
         0 0 45px rgba(255, 81, 47, 0.5),
