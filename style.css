@@ -2387,8 +2387,9 @@ footer {
     align-items: center;
     text-align: center;
     box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.08),
-        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+        0 4px 20px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+    /* Clean hairline border */
 
     opacity: 0;
     filter: none;
@@ -2401,84 +2402,15 @@ footer {
     /* Billboarding handled by JS */
 }
 
-/* Holographic Shimmer Effect */
-.problem-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg,
-            transparent 30%,
-            rgba(255, 81, 47, 0.1) 50%,
-            rgba(247, 147, 30, 0.15) 55%,
-            rgba(255, 187, 0, 0.1) 60%,
-            transparent 70%);
-    transform: rotate(0deg);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
+/* Removed pulsing and holographic effects for minimalist SaaS look */
 
-/* Particle Burst Container for Active Card */
-.problem-card::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120%;
-    height: 120%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(247, 147, 30, 0.15) 0%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-    animation: pulseGlow 3s ease-in-out infinite;
-}
-
-@keyframes pulseGlow {
-
-    0%,
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0;
-    }
-
-    50% {
-        transform: translate(-50%, -50%) scale(1.1);
-        opacity: 0.3;
-    }
-}
-
-/* Active Card State - MAGNETIC & HOLOGRAPHIC */
 .problem-card.active-card {
-    border-color: rgba(247, 147, 30, 0.6);
+    border-color: #F7931E;
+    /* Primary color as a clean border */
     box-shadow:
-        0 20px 60px rgba(247, 147, 30, 0.25),
-        0 0 40px rgba(255, 81, 47, 0.15),
-        0 0 0 1px rgba(247, 147, 30, 0.3) inset,
-        0 0 80px rgba(247, 147, 30, 0.1);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 252, 248, 0.98) 100%);
-}
-
-.problem-card.active-card::before {
-    opacity: 1;
-    animation: holoShimmer 3s linear infinite;
-}
-
-.problem-card.active-card::after {
-    opacity: 1;
-}
-
-@keyframes holoShimmer {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+        0 8px 30px rgba(247, 147, 30, 0.12),
+        0 0 0 1px rgba(247, 147, 30, 0.2) inset;
+    background: #ffffff;
 }
 
 /* Magnetic Hover Effect - 3D Tilt */
@@ -2564,11 +2496,11 @@ footer {
 }
 
 .problem-card.active-card .icon {
-    transform: translateZ(15px) scale(1.02);
+    transform: translateZ(15px) scale(1.05);
+    /* Minimal scale */
     box-shadow:
-        0 10px 25px rgba(247, 147, 30, 0.4),
-        0 0 20px rgba(255, 81, 47, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        0 4px 15px rgba(247, 147, 30, 0.15);
+    /* Very subtle shadow */
 }
 
 .problem-card:hover .icon {
