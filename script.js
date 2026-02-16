@@ -1022,6 +1022,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // So cutoff around 60-70 degrees ensures only 3 are visible.
     const VISIBLE_RANGE = 70;
 
+    let lastAppliedDeg = -999;
+
     function updateCarousel() {
         // Auto-rotation
         if (!isPaused) {
@@ -1031,72 +1033,103 @@ document.addEventListener('DOMContentLoaded', () => {
             // Smooth snapping to target when paused/clicked
             // Faster snapping (0.4 instead of 0.1) while dragging for instant feedback
             const lerpFactor = isDragging ? 0.4 : 0.1;
-            if (Math.abs(targetDeg - currDeg) > 0.01) {
+            if (Math.abs(targetDeg - currDeg) > 0.001) {
                 currDeg += (targetDeg - currDeg) * lerpFactor;
             } else {
                 currDeg = targetDeg;
             }
         }
 
-        // Apply rotation to container
-        carousel.style.transform = `rotateY(${currDeg}deg)`;
+        // Stabilization: Only update DOM if degrees changed significantly
+        if (Math.abs(currDeg - lastAppliedDeg) > 0.05) {
+            lastAppliedDeg = currDeg;
 
-        // Update individual cards
-        cards.forEach((wrapper, index) => {
-            const card = wrapper.querySelector('.problem-card');
-            if (!card) return;
+            // Apply rotation to container
+            carousel.style.transform = `rotateY(${currDeg}deg)`;
 
-            // Starting angle of the card in the ring
-            const initialAngle = index * ANGLE_PER_CARD;
+            // Update individual cards
+            cards.forEach((wrapper, index) => {
+                const card = wrapper.querySelector('.problem-card');
+                if (!card) return;
 
-            // Current total angle of the card in world space
-            let totalAngle = initialAngle + currDeg;
+                // Starting angle of the card in the ring
+                const initialAngle = index * ANGLE_PER_CARD;
 
-            // Normalize to -180 to 180 to find distance from "front" (0 deg)
-            let normalizedAngle = (totalAngle % 360 + 360) % 360;
-            if (normalizedAngle > 180) normalizedAngle -= 360;
+                // Current total angle of the card in world space
+                let totalAngle = initialAngle + currDeg;
 
-            const dist = Math.abs(normalizedAngle);
+                // Normalize to -180 to 180 to find distance from "front" (0 deg)
+                let normalizedAngle = (totalAngle % 360 + 360) % 360;
+                if (normalizedAngle > 180) normalizedAngle -= 360;
 
-            // Visibility & Styling Logic
-            let opacity = 0;
-            let scale = 0.8; // Smaller base scale for inactive cards
-            let pointerEvents = 'none';
-            let zIndex = 0;
-            let border = '1px solid rgba(255, 255, 255, 0.6)'; // Default border
+                const dist = Math.abs(normalizedAngle);
 
-            // VISIBILITY THRESHOLDS (360/8 = 45deg steps)
-            if (dist < 25) {
-                // Center Front Card (Active)
-                opacity = 1;
-                scale = 1.1; // Prominent Center
-                pointerEvents = 'auto';
-                zIndex = 10;
-                card.classList.add('active-card');
-                border = '1px solid #FF6B35'; // Active Glow Border
-            } else if (dist < 75) {
-                // Side Neighbors
-                opacity = 0.6; // Fade out neighbors
-                scale = 0.9;
-                pointerEvents = 'auto';
-                zIndex = 5;
-                card.classList.remove('active-card');
-            } else {
-                // All other cards completely hidden
-                opacity = 0;
-                scale = 0.5;
-                pointerEvents = 'none';
-                card.classList.remove('active-card');
-            }
+                // Visibility & Styling Logic
+                let opacity = 0;
+                let scale = 0.8; // Smaller base scale for inactive cards
+                let pointerEvents = 'none';
+                let zIndex = 0;
+                let border = '1px solid rgba(255, 255, 255, 0.6)'; // Default border
 
-            // Billboarding: Counter-rotate so card faces camera
-            card.style.transform = `rotateY(${-totalAngle}deg) scale(${scale})`;
-            card.style.opacity = opacity;
-            // REMOVED DYNAMIC BLUR FOR PERFORMANCE
-            card.style.border = border;
-            card.style.pointerEvents = pointerEvents;
-            wrapper.style.zIndex = zIndex;
-        });
+                // VISIBILITY THRESHOLDS (360/8 = 45deg steps)
+                if (dist < 25) {
+                    // Center Front Card (Active)
+                    opacity = 1;
+                    scale = 1.1; // Prominent Center
+                    pointerEvents = 'auto';
+                    zIndex = 10;
+                    if (!card.classList.contains('active-card')) {
+                        card.classList.add('active-card');
+                    }
+                    border = '1px solid #FF6B35'; // Active Glow Border
+                } else if (dist < 75) {
+                    // Side Neighbors
+                    opacity = 0.6; // Fade out neighbors
+                    scale = 0.9;
+                    pointerEvents = 'auto';
+                    zIndex = 5;
+                    if (card.classList.contains('active-card')) {
+                        card.classList.remove('active-card');
+                    }
+                } else {
+                    // All other cards completely hidden
+                    opacity = 0;
+                    scale = 0.5;
+                    pointerEvents = 'none';
+                    if (card.classList.contains('active-card')) {
+                        card.classList.remove('active-card');
+                    }
+                }
+
+                // Billboarding: Counter-rotate so card faces camera
+                // Add a small delay/stabilization to the transform string
+                const transform = `rotateY(${-totalAngle.toFixed(2)}deg) scale(${scale})`;
+                if (card._lastTransform !== transform) {
+                    card.style.transform = transform;
+                    card._lastTransform = transform;
+                }
+
+                if (card._lastOpacity !== opacity) {
+                    card.style.opacity = opacity;
+                    card._lastOpacity = opacity;
+                }
+
+                if (card._lastBorder !== border) {
+                    card.style.border = border;
+                    card._lastBorder = border;
+                }
+
+                if (card._lastPE !== pointerEvents) {
+                    card.style.pointerEvents = pointerEvents;
+                    card._lastPE = pointerEvents;
+                }
+
+                if (wrapper._lastZI !== zIndex) {
+                    wrapper.style.zIndex = zIndex;
+                    wrapper._lastZI = zIndex;
+                }
+            });
+        }
 
         requestAnimationFrame(updateCarousel);
     }

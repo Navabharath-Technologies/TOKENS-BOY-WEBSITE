@@ -2395,6 +2395,7 @@ footer {
     position: relative;
     overflow: hidden;
     transition: opacity 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    transform-style: preserve-3d;
     backface-visibility: hidden;
     will-change: transform, opacity, box-shadow;
     /* Billboarding handled by JS */
@@ -2512,6 +2513,9 @@ footer {
         0 0 25px rgba(255, 81, 47, 0.25),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
     position: relative;
+    z-index: 5;
+    transform: translateZ(10px);
+    will-change: transform;
     animation: iconFloat 3s ease-in-out infinite, gradientShift 6s ease infinite;
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -2542,11 +2546,11 @@ footer {
 
     0%,
     100% {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateZ(10px) translateY(0px) rotate(0deg);
     }
 
     50% {
-        transform: translateY(-8px) rotate(5deg);
+        transform: translateZ(10px) translateY(-8px) rotate(5deg);
     }
 }
 
