@@ -2564,11 +2564,11 @@ footer {
 }
 
 .problem-card.active-card .icon {
-    transform: translateZ(15px) scale(1.15);
+    transform: translateZ(15px) scale(1.02);
     box-shadow:
-        0 15px 40px rgba(247, 147, 30, 0.6),
-        0 0 35px rgba(255, 81, 47, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        0 10px 25px rgba(247, 147, 30, 0.4),
+        0 0 20px rgba(255, 81, 47, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .problem-card:hover .icon {

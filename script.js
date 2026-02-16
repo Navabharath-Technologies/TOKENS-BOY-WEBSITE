@@ -1075,7 +1075,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (dist < 25) {
                     // Center Front Card (Active)
                     opacity = 1;
-                    scale = 1.1; // Prominent Center
+                    scale = 1.05; // Slightly reduced from 1.1 for balance
                     pointerEvents = 'auto';
                     zIndex = 10;
                     if (!card.classList.contains('active-card')) {
