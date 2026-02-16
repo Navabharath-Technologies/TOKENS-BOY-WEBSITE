@@ -1102,8 +1102,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 // Billboarding: Counter-rotate so card faces camera
-                // Add a small delay/stabilization to the transform string
-                const transform = `rotateY(${-totalAngle.toFixed(2)}deg) scale(${scale})`;
+                // Reduced precision (toFixed(1)) prevents sub-pixel jitter
+                const transform = `rotateY(${-totalAngle.toFixed(1)}deg) scale(${scale})`;
                 if (card._lastTransform !== transform) {
                     card.style.transform = transform;
                     card._lastTransform = transform;

@@ -2393,7 +2393,7 @@ footer {
     opacity: 0;
     filter: none;
     position: relative;
-    overflow: hidden;
+    /* Removed overflow: hidden to prevent 3D clipping */
     transition: opacity 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -2514,7 +2514,7 @@ footer {
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 5;
-    transform: translateZ(10px);
+    transform: translateZ(30px);
     will-change: transform;
     animation: iconFloat 3s ease-in-out infinite, gradientShift 6s ease infinite;
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -2546,11 +2546,11 @@ footer {
 
     0%,
     100% {
-        transform: translateZ(10px) translateY(0px) rotate(0deg);
+        transform: translateZ(30px) translateY(0px) rotate(0deg);
     }
 
     50% {
-        transform: translateZ(10px) translateY(-8px) rotate(5deg);
+        transform: translateZ(30px) translateY(-8px) rotate(5deg);
     }
 }
 
