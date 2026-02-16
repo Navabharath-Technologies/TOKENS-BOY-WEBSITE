@@ -1138,7 +1138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Click to Center Card
     cards.forEach((wrapper, index) => {
         const card = wrapper.querySelector('.problem-card');
-        
+
         wrapper.addEventListener('click', () => {
             // We want this card at 0 deg.
             // Card Angle + currDeg = 0 => currDeg = -Card Angle
@@ -1162,22 +1162,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 const rect = card.getBoundingClientRect();
                 const cardCenterX = rect.left + rect.width / 2;
                 const cardCenterY = rect.top + rect.height / 2;
-                
+
                 // Calculate mouse position relative to card center
                 const mouseX = e.clientX - cardCenterX;
                 const mouseY = e.clientY - cardCenterY;
-                
+
                 // Calculate tilt angles (max 15 degrees)
                 const maxTilt = 15;
                 const tiltX = (mouseY / (rect.height / 2)) * maxTilt;
                 const tiltY = -(mouseX / (rect.width / 2)) * maxTilt;
-                
+
                 // Apply magnetic tilt (preserve existing transform from JS)
                 const currentTransform = card.style.transform;
                 const baseTransform = currentTransform.split('scale')[0]; // Keep rotation
                 const scaleMatch = currentTransform.match(/scale\(([^)]+)\)/);
                 const currentScale = scaleMatch ? scaleMatch[1] : '1';
-                
+
                 card.style.transform = `${baseTransform} scale(${currentScale}) perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
                 card.style.transition = 'transform 0.1s ease-out';
             });
